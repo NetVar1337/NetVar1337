@@ -17,7 +17,7 @@ Visitors should immediately understand the Decepticon role, its operator-control
    - Scope and Rules of Engagement enforced at runtime.
    - OPPLAN tracks objectives, blockers, pivots, evidence, and next actions.
    - Specialist agents use ATT&CK and Skillogy context.
-5. A concise link row to Decepticon.red, the public Decepticon project, the profile’s Ghidra MCP project, and Discord.
+5. A concise link row to Decepticon.red, the public Decepticon project, and the profile’s Ghidra MCP project, followed by the plain-text Discord username.
 
 ## Deliberate exclusions
 
