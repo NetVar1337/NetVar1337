@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://decepticon.red/">
-    <img src="https://raw.githubusercontent.com/PurpleAILAB/decepticon-landing/7e06cea49f02f80501c1f0056213563a8b751bd4/public/logo.png" alt="Decepticon" width="360" />
+    <img src="https://decepticon.red/logo.png" alt="Decepticon" width="360" />
   </a>
 </p>
 
