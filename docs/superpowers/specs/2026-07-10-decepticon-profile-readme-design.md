@@ -10,7 +10,7 @@ Visitors should immediately understand the Decepticon role, its operator-control
 
 ## Content structure
 
-1. A centered Decepticon logo sourced directly from `PurpleAILAB/decepticon-landing/public/logo.png` via GitHub’s immutable raw URL for the pinned commit `7e06cea`.
+1. A centered Decepticon logo sourced from the official deployed Decepticon.red rendered asset at `https://decepticon.red/logo.png`.
 2. A compact header identifying **NetVar** as an owner of Decepticon.red and Discord username `netvar`.
 3. One positioning sentence: governed AI red-team control plane with runtime operator control.
 4. Three product claims, limited to claims stated on the official site:
@@ -27,4 +27,4 @@ Visitors should immediately understand the Decepticon role, its operator-control
 
 ## Rendering and verification
 
-The completed README must render with a visible image, accessible alt text, valid HTTPS links, and readable plain text if images fail. Validate that the raw GitHub asset URL resolves and that all Markdown link destinations match the intended public URLs.
+The completed README must render with a visible image, accessible alt text, valid HTTPS links, and readable plain text if images fail. Validate that `https://decepticon.red/logo.png` resolves and that all Markdown link destinations match the intended public URLs.

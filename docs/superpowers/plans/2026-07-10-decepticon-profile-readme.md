@@ -4,13 +4,13 @@
 
 **Goal:** Create NetVar1337’s GitHub profile README as a concise Decepticon.red owner/operator profile.
 
-**Architecture:** A single static `README.md` uses GitHub-flavored Markdown and one immutable, externally hosted brand asset from the Decepticon landing repository. It contains no executable code, dynamic status widgets, or dependencies; URLs carry readers to the canonical product, public project, research project, and Discord contact.
+**Architecture:** A single static `README.md` uses GitHub-flavored Markdown and the official deployed Decepticon.red logo asset. It contains no executable code, dynamic status widgets, or dependencies; URLs carry readers to the canonical product, public project, research project, and Discord contact.
 
-**Tech Stack:** GitHub-flavored Markdown; GitHub raw-content asset hosting.
+**Tech Stack:** GitHub-flavored Markdown; Decepticon.red deployed logo hosting.
 
 ## Global Constraints
 
-- Use `https://raw.githubusercontent.com/PurpleAILAB/decepticon-landing/7e06cea49f02f80501c1f0056213563a8b751bd4/public/logo.png` for the Decepticon logo.
+- Use `https://decepticon.red/logo.png` for the official deployed Decepticon logo.
 - Identify NetVar as an owner of [Decepticon.red](https://decepticon.red/) and expose Discord username `netvar`.
 - Claims are limited to the official Decepticon site: runtime-enforced scope and Rules of Engagement, OPPLAN execution tracking, and specialist agents grounded in ATT&CK and Skillogy.
 - Include direct links to Decepticon.red, `PurpleAILAB/Decepticon`, and `NetVar1337/decepticon-ghidra-mcp`; display Discord username `netvar` as plain text.
@@ -23,7 +23,7 @@
 
 **Files:**
 - Create: `README.md`
-- Test: GitHub raw asset URL and Markdown link destinations
+- Test: deployed Decepticon.red logo asset and Markdown link destinations
 
 **Interfaces:**
 - Consumes: GitHub Markdown image and link syntax.
@@ -36,7 +36,7 @@ Write `README.md` exactly as follows:
 ```markdown
 <p align="center">
   <a href="https://decepticon.red/">
-    <img src="https://raw.githubusercontent.com/PurpleAILAB/decepticon-landing/7e06cea49f02f80501c1f0056213563a8b751bd4/public/logo.png" alt="Decepticon" width="360" />
+    <img src="https://decepticon.red/logo.png" alt="Decepticon" width="360" />
   </a>
 </p>
 
@@ -66,7 +66,7 @@ Write `README.md` exactly as follows:
 Run these commands from the repository root:
 
 ```bash
-curl --fail --silent --show-error --output /dev/null https://raw.githubusercontent.com/PurpleAILAB/decepticon-landing/7e06cea49f02f80501c1f0056213563a8b751bd4/public/logo.png
+curl --fail --silent --show-error --output /dev/null https://decepticon.red/logo.png
 curl --fail --silent --show-error --output /dev/null https://decepticon.red/
 curl --fail --silent --show-error --output /dev/null https://github.com/PurpleAILAB/Decepticon
 curl --fail --silent --show-error --output /dev/null https://github.com/NetVar1337/decepticon-ghidra-mcp
