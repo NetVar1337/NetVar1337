@@ -37,7 +37,7 @@ Reverse engineering · exploit research · security audits
 | Project | Focus |
 | --- | --- |
 | [decepticon-ghidra-mcp](https://github.com/NetVar1337/decepticon-ghidra-mcp) | Ghidra MCP tooling for P-code, BSim, version tracking, emulation, and agentic vulnerability research. |
-| [omniwire](https://github.com/NetVar1337/omniwire) | Infrastructure for AI agent swarms: MCP tooling, A2A coordination, networking, browser automation, and operator controls. |
+| [omniwire](https://github.com/NetVar1337/omniwire) | Infrastructure for AI agent swarms: MCP tooling, A2A coordination, networking, and browser automation. |
 | [unleash](https://github.com/NetVar1337/unleash) | Bun SEA bytecode patch-analysis tooling with interactive workflows and signature scanning. |
 
 ## Connect
