@@ -7,7 +7,7 @@
 <h1 align="center">NetVar</h1>
 
 <p align="center">
-  Owner, <a href="https://decepticon.red/"><strong>Decepticon.red</strong></a><br />
+  Co-Owner, <a href="https://decepticon.red/"><strong>Decepticon.red</strong></a><br />
   Governed AI red-team control plane · Discord: <code>netvar</code>
 </p>
 
