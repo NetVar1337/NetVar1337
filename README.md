@@ -6,7 +6,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=800&color=A78BFA&center=true&vCenter=true&width=780&height=50&lines=Windows+Internals+%7C+Kernel+%7C+DMA;Game+Hacking+%7C+Anti-Cheat+Research;Reverse+Engineering+%7C+Offensive+AI)](https://git.io/typing-svg)
 
-[![X](https://img.shields.io/badge/X-NetVar1337-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/CyberNordicNO)
+[![X](https://img.shields.io/badge/X-NetVar1337-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/NetVar1337)
 [![GitHub](https://img.shields.io/badge/GitHub-NetVar1337-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NetVar1337)
 [![PurpleAILAB](https://img.shields.io/badge/PurpleAILAB-Co--Owner-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PurpleAILAB)
 [![Discord](https://img.shields.io/badge/Discord-netvar-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/netvar)
