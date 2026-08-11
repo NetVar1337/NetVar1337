@@ -2,7 +2,7 @@
 
 # NetVar1337
 
-### Developer Â· Reverse Engineer Â· Game Hacker
+### Developer | Reverse Engineer | Game Hacker
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=800&color=A78BFA&center=true&vCenter=true&width=780&height=50&lines=Windows+Internals+%7C+Kernel+%7C+DMA;Game+Hacking+%7C+Anti-Cheat+Research;Reverse+Engineering+%7C+Offensive+AI)](https://git.io/typing-svg)
 
@@ -19,7 +19,7 @@
 
 ## About
 
-I build and break systems at every layer â€” userland game internals, Windows kernel, DMA/FPGA, and AI-native offensive tooling.
+I build and break systems at every layer - userland game internals, Windows kernel, DMA/FPGA, and AI-native offensive tooling.
 
 Co-owner of **[PurpleAILAB](https://github.com/PurpleAILAB)** / **[Decepticon](https://github.com/PurpleAILAB/Decepticon)** (autonomous red-team agent).
 
@@ -45,24 +45,24 @@ Co-owner of **[PurpleAILAB](https://github.com/PurpleAILAB)** / **[Decepticon](h
 ### Autonomous Offense
 | | |
 |:--|:--|
-| **[Decepticon](https://github.com/PurpleAILAB/Decepticon)** | Autonomous red-team agent â€” real kill chains, RoE/OPPLAN discipline, 98% XBOW |
+| **[Decepticon](https://github.com/PurpleAILAB/Decepticon)** | Autonomous red-team agent - real kill chains, RoE/OPPLAN discipline, 98% XBOW |
 | **[decepticon-ghidra-mcp](https://github.com/NetVar1337/decepticon-ghidra-mcp)** | Full Ghidra MCP for agentic binary analysis and 0-day workflows |
-| **[omniwire](https://github.com/NetVar1337/omniwire)** | Agent-swarm infrastructure â€” MCP, A2A, mesh VPN, CDP, 2FA |
+| **[omniwire](https://github.com/NetVar1337/omniwire)** | Agent-swarm infrastructure - MCP, A2A, mesh VPN, CDP, 2FA |
 
-### Reverse Engineering & Low-Level
+### Reverse Engineering and Low-Level
 | | |
 |:--|:--|
 | **[Kevlar](https://github.com/NetVar1337/Kevlar)** | Windows kernel-driver emulation on Unicorn Engine |
-| **[unleash](https://github.com/NetVar1337/unleash)** | Bun SEA bytecode patcher â€” 113 patches, interactive TUI |
+| **[unleash](https://github.com/NetVar1337/unleash)** | Bun SEA bytecode patcher - 113 patches, interactive TUI |
 | **[AiDA-Fork](https://github.com/NetVar1337/AiDA-Fork)** | AI assistant for IDA 9.0+ (C++ game RE) |
 | **[codex-patcher-cc](https://github.com/NetVar1337/codex-patcher-cc)** | Codex CLI Mach-O patcher |
 
-### Game Security & DMA
+### Game Security and DMA
 | | |
 |:--|:--|
 | **[unknowncheats-mcp](https://github.com/NetVar1337/unknowncheats-mcp)** | UC / Elitepvpers MCP with Cloudflare bypass |
 | **[dma-ai-toolkit](https://github.com/NetVar1337/dma-ai-toolkit)** | AI-assisted PCILeech / DMA research toolkit |
-| **[PCILeechGen](https://github.com/NetVar1337/PCILeechGen)** Â· **[pcileech-fpga](https://github.com/NetVar1337/pcileech-fpga)** | DMA firmware + FPGA modules |
+| **[PCILeechGen](https://github.com/NetVar1337/PCILeechGen)** / **[pcileech-fpga](https://github.com/NetVar1337/pcileech-fpga)** | DMA firmware + FPGA modules |
 
 ### Developer Tools
 | | |
@@ -90,8 +90,9 @@ Co-owner of **[PurpleAILAB](https://github.com/PurpleAILAB)** / **[Decepticon](h
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
-**RE:** IDA Pro Â· Ghidra Â· x64dbg Â· WinDbg Â· HyperDbg Â· PCILeech Â· Unicorn Â· Frida  
-**Offense / AI:** Claude Code Â· Codex Â· MCP Â· A2A Â· agent swarms Â· binary instrumentation
+**RE:** IDA Pro | Ghidra | x64dbg | WinDbg | HyperDbg | PCILeech | Unicorn | Frida
+
+**Offense / AI:** Claude Code | Codex | MCP | A2A | agent swarms | binary instrumentation
 
 ---
 
@@ -120,9 +121,9 @@ Co-owner of **[PurpleAILAB](https://github.com/PurpleAILAB)** / **[Decepticon](h
 
 ## Now
 
-- Kernel tooling â€” driver emulation, mapping, hypervisor research
+- Kernel tooling - driver emulation, mapping, hypervisor research
 - Game / anti-cheat reverse engineering
-- DMA Â· PCILeech Â· FPGA surface expansion
+- DMA / PCILeech / FPGA surface expansion
 - Autonomous red teaming @ PurpleAILAB
 - High-signal tools around AI coding agents
 
