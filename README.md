@@ -11,6 +11,7 @@
 [![PurpleAILAB](https://img.shields.io/badge/PurpleAILAB-Co--Owner-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PurpleAILAB)
 [![Discord](https://img.shields.io/badge/Discord-netvar-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/netvar)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-netvar-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/netvar)
+[![Decepticon](https://img.shields.io/badge/Decepticon-decepticon.red-111827?style=for-the-badge)](https://decepticon.red)
 
 </div>
 
@@ -105,17 +106,25 @@ Co-owner of **[PurpleAILAB](https://github.com/PurpleAILAB)** / **[Decepticon](h
 
 [![Streak](https://streak-stats.demolab.com/?user=NetVar1337&theme=radical&hide_border=true)](https://git.io/streak-stats)
 
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NetVar1337/NetVar1337/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NetVar1337/NetVar1337/output/github-contribution-grid-snake.svg" />
+  <img alt="github contribution snake" src="https://raw.githubusercontent.com/NetVar1337/NetVar1337/output/github-contribution-grid-snake.svg" />
+</picture>
+
 </div>
 
 ---
 
 ## Now
 
-- Kernel tooling â€” driver emulation, mapping, hypervisor research  
-- Game / anti-cheat reverse engineering  
-- DMA Â· PCILeech Â· FPGA surface expansion  
-- Autonomous red teaming @ PurpleAILAB  
-- High-signal tools around AI coding agents  
+- Kernel tooling â€” driver emulation, mapping, hypervisor research
+- Game / anti-cheat reverse engineering
+- DMA Â· PCILeech Â· FPGA surface expansion
+- Autonomous red teaming @ PurpleAILAB
+- High-signal tools around AI coding agents
 
 Open to collaboration on RE, exploit research, game security, and offensive AI.
 
