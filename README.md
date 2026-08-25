@@ -128,10 +128,10 @@ Co-founder of **[PurpleAILAB](https://github.com/PurpleAILAB)** and architect be
 <table border="0">
   <tr>
     <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=NetVar1337&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&title_color=A78BFA&text_color=E2E8F0&icon_color=7C3AED&bg_color=0D1117" alt="GitHub Stats" />
+      <img src="https://github-stats-extended.vercel.app/api?username=NetVar1337&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&title_color=A78BFA&text_color=E2E8F0&icon_color=7C3AED&bg_color=0D1117" alt="GitHub Stats" />
     </td>
     <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NetVar1337&layout=compact&theme=radical&hide_border=true&title_color=A78BFA&text_color=E2E8F0&bg_color=0D1117" alt="Top Languages" />
+      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=NetVar1337&layout=compact&theme=radical&hide_border=true&title_color=A78BFA&text_color=E2E8F0&bg_color=0D1117" alt="Top Languages" />
     </td>
   </tr>
   <tr>
