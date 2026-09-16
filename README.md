@@ -33,7 +33,7 @@ Co-founder of **[PurpleAILAB](https://github.com/PurpleAILAB)** and architect be
 | Layer / Domain | Focus & Techniques | Weaponry & Tooling |
 |:---|:---|:---|
 | **Ring -1 / Hypervisors** | VT-x virtualization, EPT/NPT hook stealth, VMCS manipulation, VMEXIT interception | C, x86_64 ASM, [Ophion](https://github.com/NetVar1337/Ophion), HyperDbg |
-| **Ring 0 / Windows Kernel** | Driver architecture, manual mapping, BYOVD exploitation, DKOM, callback removal, Unicorn emulation | C++, [Kevlar](https://github.com/NetVar1337/Kevlar), WinDbg, KD |
+| **Ring 0 / Windows Kernel** | Driver architecture, manual mapping, BYOVD exploitation, DKOM, callback removal, Unicorn emulation | C++, [Kevlar](https://github.com/NetVar1337/Kevlar-Ultimate), WinDbg, KD |
 | **Hardware & DMA** | Direct Memory Access, custom FPGA gateware, PCIe TLP generation, physical memory introspection | Verilog, C, Python, [PCILeechGen](https://github.com/NetVar1337/PCILeechGen), [dma-ai-toolkit](https://github.com/NetVar1337/dma-ai-toolkit) |
 | **Reverse Engineering** | Static & dynamic binary triage, protocol deconstruction, packing/VM deobfuscation, agentic RE | IDA Pro, Ghidra, x64dbg, Frida, [AiDA-Fork](https://github.com/NetVar1337/AiDA-Fork), [decepticon-ghidra-mcp](https://github.com/NetVar1337/decepticon-ghidra-mcp) |
 | **Game Security & Internals** | Memory manipulation, VMT/IAT hooks, SDK dumpers, anti-cheat analysis (EAC / BE / Vanguard) | C++, Rust, [unknowncheats-mcp](https://github.com/NetVar1337/unknowncheats-mcp), MinHook, Dumper-7 |
@@ -55,7 +55,7 @@ Co-founder of **[PurpleAILAB](https://github.com/PurpleAILAB)** and architect be
 ### ⚙️ Low-Level, Kernel & Reverse Engineering
 | Repository | Description | Tech |
 |:---|:---|:---|
-| **[NetVar1337 / Kevlar](https://github.com/NetVar1337/Kevlar)** | x64 Windows kernel-driver emulation and behavioral analysis harness powered by Unicorn Engine | `C++` `Unicorn` `Kernel` |
+| **[NetVar1337 / Kevlar](https://github.com/NetVar1337/Kevlar-Ultimate)** | x64 Windows kernel-driver emulation and behavioral analysis harness powered by Unicorn Engine | `C++` `Unicorn` `Kernel` |
 | **[NetVar1337 / Ophion](https://github.com/NetVar1337/Ophion)** | Stealth-focused Intel VT-x Hypervisor implementation (EPT hooking, VMCS shadow pages) | `C` `Assembly` `VT-x` |
 | **[NetVar1337 / unleash](https://github.com/NetVar1337/unleash)** | Bun SEA bytecode patcher & zero-refusal runtime harness — 113 binary patches, interactive TUI | `Go` `Bytecode` `TUI` |
 | **[NetVar1337 / AiDA-Fork](https://github.com/NetVar1337/AiDA-Fork)** | AI assistant plugin for IDA Pro 9.0+ accelerating complex C++ game & engine reverse engineering | `C++` `IDA Pro` `AI` |
