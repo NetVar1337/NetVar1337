@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="Top languages">
+  <rect width="360" height="200" rx="12" fill="#0B0F14" stroke="#1E293B" stroke-width="1"/>
+  <rect x="0" y="0" width="360" height="4" rx="2" fill="#22D3EE"/>
+  <text x="22" y="36" font-family="Noto Sans, sans-serif" font-size="16" font-weight="700" fill="#A78BFA">Top languages</text>
+
+  <text x="22" y="73" font-family="Noto Sans, sans-serif" font-size="12" fill="#CBD5E1">Python</text>
+  <rect x="130" y="62" width="200" height="10" rx="5" fill="#1E293B"/>
+  <rect x="130" y="62" width="66" height="10" rx="5" fill="#3776AB"/>
+  <text x="22" y="95" font-family="Noto Sans, sans-serif" font-size="12" fill="#CBD5E1">Rust</text>
+  <rect x="130" y="84" width="200" height="10" rx="5" fill="#1E293B"/>
+  <rect x="130" y="84" width="33" height="10" rx="5" fill="#DEA584"/>
+  <text x="22" y="117" font-family="Noto Sans, sans-serif" font-size="12" fill="#CBD5E1">JavaScript</text>
+  <rect x="130" y="106" width="200" height="10" rx="5" fill="#1E293B"/>
+  <rect x="130" y="106" width="33" height="10" rx="5" fill="#F7DF1E"/>
+  <text x="22" y="139" font-family="Noto Sans, sans-serif" font-size="12" fill="#CBD5E1">Go</text>
+  <rect x="130" y="128" width="200" height="10" rx="5" fill="#1E293B"/>
+  <rect x="130" y="128" width="16" height="10" rx="5" fill="#00ADD8"/>
+  <text x="22" y="161" font-family="Noto Sans, sans-serif" font-size="12" fill="#CBD5E1">TypeScript</text>
+  <rect x="130" y="150" width="200" height="10" rx="5" fill="#1E293B"/>
+  <rect x="130" y="150" width="16" height="10" rx="5" fill="#3178C6"/>
+  <text x="22" y="183" font-family="Noto Sans, sans-serif" font-size="12" fill="#CBD5E1">C / C++</text>
+  <rect x="130" y="172" width="200" height="10" rx="5" fill="#1E293B"/>
+  <rect x="130" y="172" width="33" height="10" rx="5" fill="#00599C"/>
+</svg>
