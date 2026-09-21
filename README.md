@@ -1,10 +1,8 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/NetVar1337/NetVar1337/master/assets/banner.png" alt="NetVar — Reverse Engineer, Bug Bounty Hunter, Developer" width="100%" />
-</div>
 
-<br/>
+# NetVar
 
-<div align="center">
+`Reverse Engineer` · `Bug Bounty Hunter` · `Developer`
 
 **I reverse binaries, hunt bugs, and ship the tooling that makes both faster.**
 
