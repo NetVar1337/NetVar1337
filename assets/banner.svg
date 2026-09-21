@@ -23,21 +23,18 @@
   <rect x="0" y="0" width="1100" height="4" rx="2" fill="url(#accent)"/>
   <rect x="0" y="4" width="320" height="180" fill="url(#glow)"/>
 
-  <!-- monogram -->
   <g transform="translate(48, 58)">
     <rect width="92" height="92" rx="16" fill="#0B1220" stroke="#334155" stroke-width="1.5"/>
     <rect x="6" y="6" width="80" height="80" rx="12" fill="none" stroke="url(#accent)" stroke-width="1.2" opacity="0.9"/>
-    <text x="46" y="64" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="36" font-weight="700" fill="#E2E8F0">NV</text>
+    <text x="46" y="64" text-anchor="middle" font-family="Noto Sans Mono, monospace" font-size="36" font-weight="700" fill="#E2E8F0">NV</text>
   </g>
 
-  <text x="168" y="96" font-family="ui-sans-serif, system-ui, Segoe UI, Inter, sans-serif" font-size="42" font-weight="700" fill="#F8FAFC" letter-spacing="1.5">NetVar</text>
-  <text x="168" y="128" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#A78BFA">@NetVar1337</text>
+  <text x="168" y="96" font-family="Noto Sans, sans-serif" font-size="42" font-weight="700" fill="#F8FAFC" letter-spacing="1.5">NetVar</text>
+  <text x="168" y="128" font-family="Noto Sans Mono, monospace" font-size="16" fill="#A78BFA">@NetVar1337</text>
+  <text x="168" y="176" font-family="Noto Sans, sans-serif" font-size="18" fill="#CBD5E1">Reverse Engineer  ·  Bug Bounty Hunter  ·  Developer</text>
+  <text x="168" y="206" font-family="Noto Sans Mono, monospace" font-size="13" fill="#64748B">Windows internals  ·  binary analysis  ·  Web2 / Web3 hunts  ·  agentic tooling</text>
 
-  <text x="168" y="176" font-family="ui-sans-serif, system-ui, Segoe UI, Inter, sans-serif" font-size="18" fill="#CBD5E1">Reverse Engineer  ·  Bug Bounty Hunter  ·  Developer</text>
-  <text x="168" y="206" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#64748B">Windows internals  ·  binary analysis  ·  Web2 / Web3 hunts  ·  agentic tooling</text>
-
-  <!-- right rail -->
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#475569">
+  <g font-family="Noto Sans Mono, monospace" font-size="11" fill="#475569">
     <text x="820" y="78">00  48 89 5C 24 08</text>
     <text x="820" y="96">08  48 89 74 24 10</text>
     <text x="820" y="114">10  57 48 83 EC 20</text>

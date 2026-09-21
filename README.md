@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="NetVar — Reverse Engineer, Bug Bounty Hunter, Developer" width="100%" />
+  <img src="./assets/banner.png" alt="NetVar — Reverse Engineer, Bug Bounty Hunter, Developer" width="100%" />
 </div>
 
 <br/>
