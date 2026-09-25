@@ -2,11 +2,11 @@
 
 # NetVar
 
-`Reverse Engineer` · `Bug Bounty Hunter` · `Developer`
+`Game Security` · `Anti-Cheat` · `Reverse Engineer` · `Developer`
 
-**I reverse binaries, hunt bugs, and ship the tooling that makes both faster.**
+**I work on keeping multiplayer games fair: understanding how cheats actually work, then building the detections that catch them.**
 
-Windows internals · IDA / Ghidra · Web2 & Web3 bounties · agentic security systems
+Game security & anti-cheat · Windows internals · IDA / Ghidra · detection engineering · SQL & telemetry
 
 <br/>
 
@@ -21,11 +21,18 @@ Windows internals · IDA / Ghidra · Web2 & Web3 bounties · agentic security sy
 
 ---
 
-I work where **low-level systems** and **offensive research** meet product engineering.
+I work where **game security**, **low-level systems** and **detection engineering** meet.
 
-That means taking apart Windows kernel / hypervisor behavior, mapping how a binary actually runs, then turning the findings into reports, automations, and platforms other hunters can use. I co-build **[Decepticon](https://github.com/BitterSecurity/Decepticon)** — an autonomous red-team agent with 5.6k+ stars — and **[Vigilo](https://github.com/BitterSecurity/Vigilo)**, an AI researcher for Web3 bounties and audit contests.
+That means taking apart how cheats and anti-cheat actually behave — kernel drivers, DMA
+hardware, aim automation, input emulation — and turning that understanding into detections,
+telemetry queries and reports a security team can act on. Understanding the attack is the
+prerequisite; building the defence is the job.
 
-> If you understand how the machine thinks, you can prove where it fails.
+I co-build **[Decepticon](https://github.com/BitterSecurity/Decepticon)** — an autonomous
+red-team agent with 5.6k+ stars — and **[Vigilo](https://github.com/BitterSecurity/Vigilo)**,
+an AI researcher for Web3 bounties and audit contests.
+
+> Know how the cheat works, and you know exactly what behaviour to measure.
 
 ## Focus
 
@@ -33,30 +40,56 @@ That means taking apart Windows kernel / hypervisor behavior, mapping how a bina
 <tr>
 <td width="33%" valign="top">
 
+### Game Security & Anti-Cheat
+Cheat taxonomy for FPS titles, behavioral aim detection, match-integrity analytics, HWID and account-economy abuse, cheat-community intelligence.
+
+`anti-cheat` `detection engineering` `telemetry` `SQL` `Apex / FPS`
+
+</td>
+<td width="33%" valign="top">
+
 ### Reverse Engineering
-Static + dynamic analysis of native code, drivers, and anti-tamper. Kernel emulation, VT-x research, protocol recovery.
+Static + dynamic analysis of native code, drivers and anti-tamper. Kernel emulation, VT-x research, protocol recovery — the ground truth behind every detection.
 
 `IDA Pro` `Ghidra` `x64dbg` `WinDbg` `Frida` `Unicorn`
 
 </td>
 <td width="33%" valign="top">
 
-### Bug Bounty
-Authorized Web2 / Web3 hunting: recon, root-cause, and report quality. Smart-contract review, contest work, agent-assisted triage.
-
-`Web2 / Web3` `audit contests` `Burp` `Vigilo`
-
-</td>
-<td width="33%" valign="top">
-
 ### Development
-C/C++, Rust, Go, Zig, Python, TypeScript. MCP servers, desktop HUDs, agent infrastructure, embedded Linux.
+C/C++, Rust, Go, Zig, Python, TypeScript, SQL. Detection pipelines, MCP servers, desktop tooling, embedded Linux.
 
-`systems` `CLI` `MCP` `FPGA` `desktop`
+`systems` `CLI` `MCP` `data` `desktop`
 
 </td>
 </tr>
 </table>
+
+## Game security work
+
+The defence-in-depth stack I build and study — host signals → static signals → behavioral
+signals → economic/account signals → intelligence.
+
+| Project | What it is |
+|:---|:---|
+| **[apex-anticheat-lab](https://github.com/NetVar1337/apex-anticheat-lab)** | FPS anti-cheat lab: cheat taxonomy, aim-kinematics detections, match-integrity SQL, YARA, host survey |
+| **[cheat-intel](https://github.com/NetVar1337/cheat-intel)** | Cheat-community intelligence: monitoring methodology, trend reports, the intel → detection feedback loop |
+| **[account-security](https://github.com/NetVar1337/account-security)** | ATO, credential stuffing, session and identity abuse detection — signal catalogue + SQL + scoring |
+| **[Kevlar](https://github.com/NetVar1337/Kevlar-Ultimate)** | Windows kernel-driver emulation & behavioral analysis (Unicorn) |
+| **[unknowncheats-mcp](https://github.com/NetVar1337/unknowncheats-mcp)** | Structured access to public cheat-community research threads |
+
+**How I work on a cheat problem:**
+
+1. **Taxonomy first** — name the class (aimbot / triggerbot / ESP / DMA / macro / spoofing /
+   boosting) and which detection layer it can possibly show up in.
+2. **Behaviour over binaries** — signatures expire in days; aim kinematics, input timing and
+   economic behaviour survive cheat rewrites and hardware changes.
+3. **Cohort before score** — mouse vs. controller, rank tier, weapon class. A pooled baseline
+   produces false positives, not detections.
+4. **Explainable, ranked review** — never auto-ban on one feature. Every flag carries the
+   numbers that produced it.
+5. **Measure the enforcement** — infection rate before/after a wave, and how fast the adversary
+   adapts. Tempo is the real KPI.
 
 ## Featured work
 
@@ -65,7 +98,7 @@ C/C++, Rust, Go, Zig, Python, TypeScript. MCP servers, desktop HUDs, agent infra
 | **[Decepticon](https://github.com/BitterSecurity/Decepticon)** | Autonomous red-team agent — authorized assessments, RoE-aware execution | [![stars](https://img.shields.io/github/stars/BitterSecurity/Decepticon?style=flat-square&logo=github&color=8B5CF6)](https://github.com/BitterSecurity/Decepticon) |
 | **[Vigilo](https://github.com/BitterSecurity/Vigilo)** | AI researcher for Web3 / smart-contract bounties and audit contests | [![stars](https://img.shields.io/github/stars/BitterSecurity/Vigilo?style=flat-square&logo=github&color=8B5CF6)](https://github.com/BitterSecurity/Vigilo) |
 | **[Kevlar](https://github.com/NetVar1337/Kevlar-Ultimate)** | Windows kernel-driver emulation & behavioral analysis (Unicorn) | [![stars](https://img.shields.io/github/stars/NetVar1337/Kevlar-Ultimate?style=flat-square&logo=github&color=8B5CF6)](https://github.com/NetVar1337/Kevlar-Ultimate) |
-| **[Ophion](https://github.com/NetVar1337/Ophion)** | Intel VT-x hypervisor research — EPT, VMCS, VM-exit interception | [![stars](https://img.shields.io/github/stars/NetVar1337/Ophion?style=flat-square&logo=github&color=8B5CF6)](https://github.com/NetVar1337/Ophion) |
+| **[Ophion](https://github.com/NetVar1337/Ophion)** | Intel VT-x research — EPT, VMCS and VM-exit interception, used for integrity and hypervisor-residency analysis | [![stars](https://img.shields.io/github/stars/NetVar1337/Ophion?style=flat-square&logo=github&color=8B5CF6)](https://github.com/NetVar1337/Ophion) |
 | **[Ghidra MCP](https://github.com/NetVar1337/decepticon-ghidra-mcp)** | Full Ghidra MCP (P-code, BSim, version tracking, emulation) | [![stars](https://img.shields.io/github/stars/NetVar1337/decepticon-ghidra-mcp?style=flat-square&logo=github&color=8B5CF6)](https://github.com/NetVar1337/decepticon-ghidra-mcp) |
 | **[omniwire](https://github.com/NetVar1337/omniwire)** | Agent-swarm infrastructure — MCP, A2A, mesh VPN, browser automation | [![stars](https://img.shields.io/github/stars/NetVar1337/omniwire?style=flat-square&logo=github&color=8B5CF6)](https://github.com/NetVar1337/omniwire) |
 | **[vibe-island](https://github.com/NetVar1337/vibe-island)** | Native Dynamic Island HUD for AI coding agents | [![stars](https://img.shields.io/github/stars/NetVar1337/vibe-island?style=flat-square&logo=github&color=8B5CF6)](https://github.com/NetVar1337/vibe-island) |
@@ -83,17 +116,18 @@ C/C++, Rust, Go, Zig, Python, TypeScript. MCP servers, desktop HUDs, agent infra
   <img src="https://img.shields.io/badge/Frida-FF3E00?style=flat-square" alt="Frida" />
   <img src="https://img.shields.io/badge/Unicorn-BE123C?style=flat-square" alt="Unicorn" />
   <img src="https://img.shields.io/badge/HyperDbg-15803D?style=flat-square" alt="HyperDbg" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
+  <img src="https://img.shields.io/badge/YARA-2C2D72?style=flat-square" alt="YARA" />
   <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white" alt="Burp" />
   <img src="https://img.shields.io/badge/Zig-F7A41D?style=flat-square&logo=zig&logoColor=black" alt="Zig" />
-  <img src="https://img.shields.io/badge/Verilog-2C2D72?style=flat-square" alt="Verilog" />
 </div>
 
 ## Now
 
-- Kernel & hypervisor research — VT-x, driver emulation, Windows internals
-- Bug bounty & Web3 audit pipelines — Decepticon / Vigilo, report automation
-- Agentic RE — Ghidra / IDA MCP, binary triage at swarm scale
-- Systems tooling — MCP lifecycle, native HUDs, low-latency developer UX
+- Game security & anti-cheat — cheat taxonomy, behavioral aim detection, match-integrity analytics
+- Anti-cheat internals — kernel drivers, DMA hardware surface, hypervisor-level integrity research
+- Cheat-community intelligence — trend monitoring and the intel → detection feedback loop
+- Detection engineering — telemetry, SQL, explainable scoring, enforcement measurement
 
 ## Activity
 
@@ -110,12 +144,12 @@ C/C++, Rust, Go, Zig, Python, TypeScript. MCP servers, desktop HUDs, agent infra
 
 <div align="center">
 
-Open to **bug bounty collabs**, **RE / Windows internals work**, and **security-product engineering**.
+Open to **game security / anti-cheat roles**, **detection engineering**, **RE / Windows internals work**, and **security-product engineering**.
 
-[Decepticon](https://decepticon.red) · [GitHub](https://github.com/NetVar1337) · [X](https://x.com/NetVar1337) · [TryHackMe](https://tryhackme.com/p/netvar)
+[apex-anticheat-lab](https://github.com/NetVar1337/apex-anticheat-lab) · [Decepticon](https://decepticon.red) · [GitHub](https://github.com/NetVar1337) · [X](https://x.com/NetVar1337) · [TryHackMe](https://tryhackme.com/p/netvar)
 
 ```c
-while (true) { if (understand_the_machine()) prove_the_bug(); }
+while (true) { if (understand_the_cheat()) build_the_detection(); }
 ```
 
 </div>
