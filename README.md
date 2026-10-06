@@ -1,4 +1,4 @@
-# Markus Halvorsen
+# NetVar1337 "M.H"
 
 Independent research toward **game-security analyst** work. I do not work for a studio or an anti-cheat vendor.
 
