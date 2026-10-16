@@ -1,65 +1,135 @@
 <div align="center">
 
-# NetVar1337
+<img src="./assets/banner.svg" width="100%" alt="NetVar1337 — Build openly. Think adversarially. Verify the evidence. Security, reverse engineering, AI/ML, and Web3." />
 
-**Build openly. Think adversarially. Verify the evidence.**
+<br />
 
-Norwegian builder exploring security, reverse engineering, and AI.
+**Norwegian builder · Open-source enthusiast · Security researcher**
 
-[hashward](https://hashward.io/) · [BitterSecurity](https://bittersecurity.com/) · [Decepticon](https://decepticon.red/)
+[**hashward ↗**](https://hashward.io/) &nbsp; / &nbsp; [**BitterSecurity ↗**](https://bittersecurity.com/) &nbsp; / &nbsp; [**Decepticon ↗**](https://decepticon.red/)
 
-[GitHub](https://github.com/NetVar1337) · [X](https://x.com/NetVar1337) · [TryHackMe](https://tryhackme.com/p/NetVar)
+[GitHub](https://github.com/NetVar1337) &nbsp; · &nbsp; [X](https://x.com/NetVar1337) &nbsp; · &nbsp; [TryHackMe](https://tryhackme.com/p/NetVar)
 
 </div>
 
+<br />
+
+## 👋 Behind the handle
+
+I'm **NetVar** — founder of **hashward** and co-founder of **BitterSecurity**. I'm interested in how systems work, how they fail, and how to make them harder to abuse.
+
+My interests connect **ethical hacking**, **reverse engineering**, **AI/ML**, and **smart contract security**. Open source is where I share the work and learn from others.
+
+> Clear assumptions. Reproducible experiments. Conclusions that stay within the evidence.
+
+<br />
+
+## 🛠️ Building & contributing
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### ◈ hashward
+**Founder**
+
+Building in the open.
+
+[Website ↗](https://hashward.io/)<br />
+[Organization ↗](https://github.com/hashward-io)
+
+</td>
+<td width="33%" valign="top">
+
+### ⬡ BitterSecurity
+**Co-founder**
+
+Part of my security work.
+
+[Website ↗](https://bittersecurity.com/)<br />
+[Organization ↗](https://github.com/BitterSecurity)
+
+</td>
+<td width="33%" valign="top">
+
+### ⌁ Decepticon
+**Contributor**
+
+An agent for authorized red-team work.
+
+[Website ↗](https://decepticon.red/)<br />
+[Repository ↗](https://github.com/BitterSecurity/Decepticon)
+
+</td>
+</tr>
+</table>
+
+<br />
+
+## 🧭 What I explore
+
+| | Focus | Questions that interest me |
+| :---: | :--- | :--- |
+| 🛡️ | **Security & ethical hacking** | Where are the attack paths, and how can authorized testing improve defenses? |
+| 🔬 | **Reverse engineering** | What does the software actually do beyond the source code? |
+| 🧠 | **AI / ML** | Where can models help security research and tooling? |
+| 🔗 | **Smart contracts & Web3** | Which trust assumptions break, and what happens when they do? |
+| 🌱 | **Open source** | How can shared, inspectable work help others build and learn? |
+
+<br />
+
+## 🔎 Research workbench
+
+Independent explorations of **game integrity**, **detection engineering**, and **account abuse**.
+
+### 🎯 [apex-anticheat-lab ↗](https://github.com/NetVar1337/apex-anticheat-lab)
+Synthetic detection fixtures, cohort-aware baselines, and explainable scores.
+
+**Worth inspecting:** an investigation where a high-skill human outranks a recoil script on the composite score — a reminder that a score is not a verdict.
+
 ---
 
-## About
+### 📡 [cheat-intel ↗](https://github.com/NetVar1337/cheat-intel)
+Evaluating community claims, classifying threats, and making source limitations explicit.
 
-I'm **NetVar** — founder of **hashward** and co-founder of **BitterSecurity**.
+**The focus:** distinguish an interesting claim from evidence that supports a conclusion.
 
-I'm interested in how systems work, how they fail, and how to make them harder to abuse. My interests span open-source software, ethical hacking, AI/ML, and the security of smart contracts and Web3 systems.
+---
 
-I value research that others can inspect: clear assumptions, reproducible experiments, and conclusions that stay within the evidence.
+### 🕸️ [account-security ↗](https://github.com/NetVar1337/account-security)
+Exploring account-takeover and session-abuse signals through graph-based analysis.
 
-## Building & contributing
+**The focus:** relationships and behavior, not just a login rate-limit.
 
-| Project | Connection | Explore |
+<details>
+<summary><strong>Research scope & limitations</strong></summary>
+
+These are independent research projects, not evidence of production deployment or employment with a game studio or anti-cheat vendor.
+
+- The anti-cheat lab uses **synthetic data**.
+- Its YARA sketches are **not operational detection rules**.
+- Decepticon is separate work intended for **authorized red-team use**.
+
+</details>
+
+<br />
+
+## ⚖️ How I approach the work
+
+| **01 / Context** | **02 / Evidence** | **03 / Permission** |
 | :--- | :--- | :--- |
-| **hashward** | Founder | [Website](https://hashward.io/) · [GitHub](https://github.com/hashward-io) |
-| **BitterSecurity** | Co-founder | [Website](https://bittersecurity.com/) · [GitHub](https://github.com/BitterSecurity) |
-| **Decepticon** | Contributor to an agent for authorized red-team work | [Website](https://decepticon.red/) · [Repository](https://github.com/BitterSecurity/Decepticon) |
+| Understand the threat model and what the data can establish. | Explain the detection, expose limitations, and make experiments reproducible. | Test within an explicitly authorized scope and disclose responsibly. |
 
-## Areas of interest
+<br />
 
-- **Cybersecurity & ethical hacking** — understanding attack paths and improving defenses through authorized testing.
-- **Reverse engineering** — understanding software behavior beyond the source code.
-- **AI / ML** — exploring applications in security research and tooling.
-- **Smart contracts & Web3** — exploring trust assumptions and failure modes in decentralized systems.
-- **Open source** — building in public and learning through shared work.
+<div align="center">
 
-## Selected security research
+### Let's build something worth inspecting.
 
-Independent projects exploring game integrity, detection engineering, and account abuse.
+Open-source collaboration · Security research · Detection engineering
 
-| Repository | What to look at |
-| :--- | :--- |
-| [apex-anticheat-lab](https://github.com/NetVar1337/apex-anticheat-lab) | Synthetic detection fixtures, cohort-aware baselines, and explainable scores. Includes an investigation where a high-skill human outranks a recoil script on the composite score. |
-| [cheat-intel](https://github.com/NetVar1337/cheat-intel) | Evaluating community claims, classifying threats, and making source limitations explicit. |
-| [account-security](https://github.com/NetVar1337/account-security) | Exploring account-takeover and session-abuse signals through graph-based analysis. |
+[**Find me on GitHub ↗**](https://github.com/NetVar1337) &nbsp; · &nbsp; [**Connect on X ↗**](https://x.com/NetVar1337) &nbsp; · &nbsp; [**TryHackMe ↗**](https://tryhackme.com/p/NetVar)
 
-These are independent research projects, not evidence of production deployment or employment with a game studio or anti-cheat vendor. The anti-cheat lab uses synthetic data; its YARA sketches are not operational detection rules.
+<sub>Build openly. Think adversarially. Verify the evidence.</sub>
 
-## Research principles
-
-**Context before conclusions.** Understand the threat model, the data, and what a signal can actually establish.
-
-**Explain the detection.** A score should come with evidence and limitations, not just a verdict.
-
-**Test with permission.** Keep security work within an explicitly authorized scope and use responsible disclosure when appropriate.
-
-## Connect
-
-Interested in open-source collaboration, security research, or detection engineering? Find me on [GitHub](https://github.com/NetVar1337) or [X](https://x.com/NetVar1337).
-
-For organization-specific information, visit [hashward](https://hashward.io/) or [BitterSecurity](https://bittersecurity.com/).
+</div>
