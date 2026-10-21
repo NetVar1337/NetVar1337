@@ -4,9 +4,9 @@
 
 <br />
 
-<a href="https://github.com/NetVar1337?tab=followers"><img src="https://img.shields.io/github/followers/NetVar1337?style=for-the-badge&logo=github&logoColor=white&color=5EEAD4&labelColor=0B1120" alt="Followers" /></a>
-<a href="https://github.com/NetVar1337?tab=repositories&sort=stargazers"><img src="https://img.shields.io/github/stars/NetVar1337?style=for-the-badge&logo=github&logoColor=white&color=A78BFA&labelColor=0B1120" alt="Stars" /></a>
-<a href="https://github.com/NetVar1337/Decepticon"><img src="https://img.shields.io/badge/Decepticon-6.4k%E2%98%85-5EEAD4?style=for-the-badge&labelColor=0B1120" alt="Decepticon" /></a>
+<a href="https://github.com/NetVar1337?tab=followers"><img src="./assets/followers.svg" alt="Followers on GitHub" /></a>
+<a href="https://github.com/NetVar1337?tab=repositories&sort=stargazers"><img src="./assets/stars.svg" alt="Stars earned across the repositories you author (forks excluded)" /></a>
+<a href="https://github.com/BitterSecurity/Decepticon"><img src="https://img.shields.io/badge/Decepticon-6.4k%E2%98%85-5EEAD4?style=for-the-badge&labelColor=0B1120" alt="Decepticon" /></a>
 <img src="https://img.shields.io/badge/Reverse%20Engineering-00778D?style=for-the-badge&logoColor=white&color=F97316&labelColor=0B1120" alt="Reverse engineering" />
 <img src="https://img.shields.io/badge/AI%20%2F%20ML-A78BFA?style=for-the-badge&logo=openai&logoColor=white&color=A78BFA&labelColor=0B1120" alt="AI/ML" />
 <img src="https://img.shields.io/badge/Web3-3B82F6?style=for-the-badge&logoColor=white&color=3B82F6&labelColor=0B1120" alt="Web3" />

@@ -199,6 +199,70 @@ def human(n: int) -> str:
     return str(n)
 
 
+def render_badge(label: str, value: str, glyph: str, accent: str, aria: str) -> str:
+    """Render a flat badge (dark label segment + accent value segment).
+
+    The badges are generated rather than pulled from shields.io so the numbers
+    come from the same API call as the cards below them, and so they cannot be
+    served stale by a third-party image cache.
+    """
+    h = 28
+    icon_w = 13
+    label_w = 10 + icon_w + 6 + round(len(label) * 8.72) + 12
+    value_w = max(45, round(8.4 * len(value)) + 20)
+    w = label_w + value_w
+    out = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
+        f'viewBox="0 0 {w} {h}" role="img" aria-label="{esc(aria)}">',
+        f'  <title>{esc(aria)}</title>',
+        '  <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">',
+        '    <stop offset="0" stop-color="#fff" stop-opacity=".16"/>',
+        '    <stop offset=".5" stop-color="#fff" stop-opacity="0"/>',
+        '    <stop offset="1" stop-color="#000" stop-opacity=".18"/>',
+        '  </linearGradient>',
+        f'  <rect width="{label_w}" height="{h}" fill="#0B1120"/>',
+        f'  <rect x="{label_w}" width="{value_w}" height="{h}" fill="{accent}"/>',
+        f'  <rect width="{w}" height="{h}" fill="url(#gloss)"/>',
+        '  <g fill="#fff" font-family="Verdana,Geneva,\'DejaVu Sans\',sans-serif">',
+        f'    {glyph}',
+        f'    <text x="31" y="18.5" font-size="11" font-weight="700" letter-spacing=".8">'
+        f'{esc(label)}</text>',
+        f'    <text x="{label_w + value_w / 2}" y="19.5" text-anchor="middle" font-size="12" '
+        f'font-weight="700">{esc(value)}</text>',
+        '  </g>',
+        "</svg>",
+    ]
+    return "\n".join(out) + "\n"
+
+
+# five-point star, centred on (18, 14)
+STAR_GLYPH = ('<path d="M18,7.2 L19.76,11.57 L24.47,11.9 L20.85,14.93 L22,19.5 '
+              'L18,17 L14,19.5 L15.15,14.93 L11.53,11.9 L16.24,11.57 Z"/>')
+
+# a single person, centred on (18, 14)
+PEOPLE_GLYPH = ('<circle cx="18" cy="11" r="4.2"/>'
+                '<path d="M10.9,21.5 a7.1,6 0 0 1 14.2,0 z"/>')
+
+
+def render_stars_badge(s: dict) -> str:
+    """Badge with the stars earned on repositories this account authors.
+
+    Forks are excluded on purpose: a fork's stars belong to the upstream
+    project, so counting them would overstate the authored work. This replaces
+    the old shields.io badge, which summed every repository on the account
+    (forks included) and therefore disagreed with the number below it in
+    `stats.svg`.
+    """
+    aria = (f"{s['own_stars']} stars earned across {s['owned_repos']} repositories "
+            f"authored by {OWNER}; forks excluded")
+    return render_badge("STARS", str(s["own_stars"]), STAR_GLYPH, ACCENT, aria)
+
+
+def render_followers_badge(s: dict) -> str:
+    aria = f"{s['followers']} people following {OWNER} on GitHub"
+    return render_badge("FOLLOWERS", str(s["followers"]), PEOPLE_GLYPH, "#5EEAD4", aria)
+
+
 def render_stats(s: dict) -> str:
     # Two columns of stacked value/label pairs; a footer carries the secondary
     # counters so nothing collides horizontally.
@@ -236,7 +300,7 @@ def render_stats(s: dict) -> str:
                 f'fill="{MUTED}">{esc(label)}</text>'
             )
     footer = (
-        f"{s['own_stars']} stars on personal repos · {s['issues']} issues · "
+        f"{s['own_stars']} stars on {s['owned_repos']} authored repos · {s['issues']} issues · "
         f"{s['org_repos']} repos under BitterSecurity & hashward-io"
     )
     out.append(f'  <line x1="22" y1="198" x2="438" y2="198" stroke="{STROKE}" stroke-width="1"/>')
@@ -294,10 +358,13 @@ def main() -> int:
 
     (ASSETS / "stats.svg").write_text(render_stats(stats), encoding="utf-8")
     (ASSETS / "langs.svg").write_text(render_langs(langs, stats), encoding="utf-8")
+    (ASSETS / "stars.svg").write_text(render_stars_badge(stats), encoding="utf-8")
+    (ASSETS / "followers.svg").write_text(render_followers_badge(stats), encoding="utf-8")
 
     print(json.dumps(stats, indent=2))
     print("languages:", [(n, s) for n, s in langs[:8]])
-    print(f"wrote {ASSETS/'stats.svg'} and {ASSETS/'langs.svg'}")
+    print(f"wrote {ASSETS/'stats.svg'}, {ASSETS/'langs.svg'}, {ASSETS/'stars.svg'} "
+          f"and {ASSETS/'followers.svg'}")
     return 0
 
 
