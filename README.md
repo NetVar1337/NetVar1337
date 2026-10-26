@@ -1,3 +1,7 @@
+<p align="center">
+  <img alt="NetVar1337 GitHub profile" src="./assets/dark_mode.svg" width="100%" />
+</p>
+
 <div align="center">
 
 <img src="./assets/banner.svg" width="100%" alt="NetVar1337 — Build openly. Think adversarially. Verify the evidence. Security, reverse engineering, AI/ML, and Web3." />
