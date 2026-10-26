@@ -4,10 +4,6 @@
 
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="NetVar1337 — Build openly. Think adversarially. Verify the evidence. Security, reverse engineering, AI/ML, and Web3." />
-
-<br />
-
 <a href="https://github.com/NetVar1337?tab=followers"><img src="./assets/followers.svg" alt="Followers on GitHub" /></a>
 <a href="https://github.com/NetVar1337?tab=repositories&sort=stargazers"><img src="./assets/stars.svg" alt="Stars earned across the repositories you author (forks excluded)" /></a>
 <a href="https://github.com/BitterSecurity/Decepticon"><img src="https://img.shields.io/badge/Decepticon-6.4k%E2%98%85-5EEAD4?style=for-the-badge&labelColor=0B1120" alt="Decepticon" /></a>
