@@ -59,8 +59,6 @@ security**. Open source is where I share the work and learn from others.
 | [**KEVLAR**](https://github.com/NetVar1337/Kevlar-Ultimate) | 6 | Windows x64 kernel-driver emulation and behaviour analysis, powered by Unicorn + Zydis. |
 | [**decepticon-ghidra-mcp**](https://github.com/NetVar1337/decepticon-ghidra-mcp) | 5 | Ghidra MCP — P-code, BSim, version tracking, and emulation. |
 | [**mcp-ctl**](https://github.com/NetVar1337/mcp-ctl) | 3 | Zero-intervention MCP lifecycle manager for every AI CLI. Written in Zig. |
-| [**agent-skill-canon**](https://github.com/NetVar1337/agent-skill-canon) | 2 | 1,200+ executable skill files for coding agents and security harnesses. |
-| [**codex-patcher-cc**](https://github.com/NetVar1337/codex-patcher-cc) | 2 | Codex CLI patcher — Rust Mach-O patches, wrapper, and config injection. |
 
 ### 🔬 Independent research
 
