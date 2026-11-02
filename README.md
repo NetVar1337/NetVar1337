@@ -46,12 +46,12 @@ software that finds, verifies, and explains vulnerabilities on real systems, wit
 
 ## 🔬 Vulnerability research & reverse engineering
 
-| Project | Stars | What it is |
-| :--- | ---: | :--- |
-| [**KEVLAR**](https://github.com/NetVar1337/Kevlar) | ![stars](https://img.shields.io/github/stars/NetVar1337/Kevlar?style=flat-square&label=%E2%98%85&color=0B1120) | Windows x64 kernel-driver emulation and behaviour analysis, built on Unicorn + Zydis. |
-| [**AiDA**](https://github.com/NetVar1337/AiDA-Fork) | ![stars](https://img.shields.io/github/stars/NetVar1337/AiDA-Fork?style=flat-square&label=%E2%98%85&color=0B1120) | Native C++ AI-assistant plugin for IDA Pro 9.x. |
-| [**audit-findings-skills**](https://github.com/NetVar1337/audit-findings-skills) | ![stars](https://img.shields.io/github/stars/NetVar1337/audit-findings-skills?style=flat-square&label=%E2%98%85&color=0B1120) | 23,625 smart-contract audit findings distilled into reusable review playbooks. |
-| [**linux-rk3576-rocket**](https://github.com/NetVar1337/linux-rk3576-rocket) | ![stars](https://img.shields.io/github/stars/NetVar1337/linux-rk3576-rocket?style=flat-square&label=%E2%98%85&color=0B1120) | RFC patch series adding RK3576 support to the mainline Linux Rocket NPU driver. |
+| Project | What it is |
+| :--- | :--- |
+| [**KEVLAR**](https://github.com/NetVar1337/Kevlar) | Windows x64 kernel-driver emulation and behaviour analysis, built on Unicorn + Zydis. |
+| [**AiDA**](https://github.com/NetVar1337/AiDA-Fork) | Native C++ AI-assistant plugin for IDA Pro 9.x. |
+| [**audit-findings-skills**](https://github.com/NetVar1337/audit-findings-skills) | 23,625 smart-contract audit findings distilled into reusable review playbooks. |
+| [**linux-rk3576-rocket**](https://github.com/NetVar1337/linux-rk3576-rocket) | RFC patch series adding RK3576 support to the mainline Linux Rocket NPU driver. |
 
 ## 🧩 Agent infrastructure
 
