@@ -1,80 +1,67 @@
 <p align="center">
-  <img alt="NetVar1337 GitHub profile" src="./assets/dark_mode.svg" width="100%" />
+  <img alt="NetVar1337 — security researcher, Norway" src="./assets/dark_mode.svg" width="100%" />
 </p>
 
 <div align="center">
 
 <a href="https://github.com/NetVar1337?tab=followers"><img src="./assets/followers.svg" alt="Followers on GitHub" /></a>
-<a href="https://github.com/NetVar1337?tab=repositories&sort=stargazers"><img src="./assets/stars.svg" alt="Stars earned across the repositories you author (forks excluded)" /></a>
+<a href="https://github.com/NetVar1337?tab=repositories&sort=stargazers"><img src="./assets/stars.svg" alt="Stars earned across the repositories I author (forks excluded)" /></a>
 <a href="https://github.com/BitterSecurity/Decepticon"><img src="https://img.shields.io/github/stars/BitterSecurity/Decepticon?style=for-the-badge&label=Decepticon&color=5EEAD4&labelColor=0B1120" alt="Decepticon stars" /></a>
-<img src="https://img.shields.io/badge/Reverse%20Engineering-00778D?style=for-the-badge&logoColor=white&color=F97316&labelColor=0B1120" alt="Reverse engineering" />
-<img src="https://img.shields.io/badge/AI%20%2F%20ML-A78BFA?style=for-the-badge&logo=openai&logoColor=white&color=A78BFA&labelColor=0B1120" alt="AI/ML" />
-<img src="https://img.shields.io/badge/Web3-3B82F6?style=for-the-badge&logoColor=white&color=3B82F6&labelColor=0B1120" alt="Web3" />
-<img src="https://img.shields.io/badge/Open%20Source-22C55E?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=22C55E&labelColor=0B1120" alt="Open source" />
+<img src="https://img.shields.io/badge/Vulnerability%20Research-F97316?style=for-the-badge&labelColor=0B1120" alt="Vulnerability research" />
+<img src="https://img.shields.io/badge/AI%20Security-A78BFA?style=for-the-badge&labelColor=0B1120" alt="AI security" />
+<img src="https://img.shields.io/badge/Reverse%20Engineering-3B82F6?style=for-the-badge&labelColor=0B1120" alt="Reverse engineering" />
 
 <br />
 
-**Norwegian builder · Security researcher · Reverse engineer · Open-source enthusiast**
+**Security researcher · AI security & agent engineering · Reverse engineer · Norway 🇳🇴**
 
-[**hashward ↗**](https://hashward.io/) &nbsp;·&nbsp; [**BitterSecurity ↗**](https://bittersecurity.com/) &nbsp;·&nbsp; [**Decepticon ↗**](https://github.com/BitterSecurity/Decepticon)
-
-[GitHub](https://github.com/NetVar1337) &nbsp;·&nbsp; [X](https://x.com/NetVar1337) &nbsp;·&nbsp; [TryHackMe](https://tryhackme.com/p/NetVar)
+[**Decepticon ↗**](https://decepticon.red/) &nbsp;·&nbsp; [**hashward ↗**](https://hashward.io/) &nbsp;·&nbsp; [**BitterSecurity ↗**](https://bittersecurity.com/) &nbsp;·&nbsp; [**X ↗**](https://x.com/NetVar1337) &nbsp;·&nbsp; [**TryHackMe ↗**](https://tryhackme.com/p/NetVar)
 
 </div>
 
 <br />
 
-## 👋 Behind the handle
+## 👋 About
 
-I'm **NetVar** — founder of **hashward** and co-founder of **BitterSecurity**. I work on autonomous
-security agents, reverse-engineering tooling, and the infrastructure that lets AI agents operate
-reliably on real systems.
+I'm **NetVar** — founder of **hashward** and co-founder of **BitterSecurity**. I build autonomous
+offensive-security agents and the reverse-engineering tooling and agent infrastructure behind them:
+software that finds, verifies, and explains vulnerabilities on real systems, within an authorized scope.
 
-My interests connect **ethical hacking**, **reverse engineering**, **AI/ML**, and **smart contract
-security**. Open source is where I share the work and learn from others.
-
-> Clear assumptions. Reproducible experiments. Conclusions that stay within the evidence.
+- 🥈 **#2 all-time contributor to [Decepticon](https://github.com/BitterSecurity/Decepticon)** — an autonomous red-team agent with 6.5k★, where I've landed 400+ commits.
+- 🤝 **26 merged PRs to other people's projects**, including [Anthropic's claude-code-action](https://github.com/anthropics/claude-code-action/pull/1055), [x64dbg](https://github.com/x64dbg/x64dbg/pull/4003), [Serena](https://github.com/oraios/serena/pull/1173), and 8 feature PRs to the [Recurse](https://github.com/Recurse-Labs/recurse) RE IDE.
+- 🔩 **Full-stack low-level work** — Windows kernel-driver emulation, Linux kernel patches, PCIe/NVMe HDL, and IDA / Ghidra / x64dbg tooling.
+- 🟢 **Open to security research, vulnerability research, and AI security roles** — reach me on [X](https://x.com/NetVar1337) or via [hashward.io](https://hashward.io/).
 
 ---
 
-## 🚀 Featured work
-
-### 🤖 Autonomous security agents — BitterSecurity
+## 🤖 AI security — autonomous agents
 
 | Project | Stars | What it is |
 | :--- | ---: | :--- |
-| [**Decepticon**](https://github.com/BitterSecurity/Decepticon) | ![stars](https://img.shields.io/github/stars/BitterSecurity/Decepticon?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous hacking agent for authorized red-team operations. The largest public project I contribute to. |
-| [**Vigilo**](https://github.com/BitterSecurity/Vigilo) | ![stars](https://img.shields.io/github/stars/BitterSecurity/Vigilo?style=flat-square&label=%E2%98%85&color=0B1120) | AI hacker for Web3 smart contracts — built for bug bounties and audit workflows. |
-| [**PurpleAILAB**](https://github.com/BitterSecurity/purpleailab.com) | ![stars](https://img.shields.io/github/stars/BitterSecurity/purpleailab.com?style=flat-square&label=%E2%98%85&color=0B1120) | Agentic cybersecurity harness with its marketing site and knowledge vault. |
+| [**Decepticon**](https://github.com/BitterSecurity/Decepticon) | ![stars](https://img.shields.io/github/stars/BitterSecurity/Decepticon?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous hacking agent for authorized red-team operations. **Core contributor (#2, 400+ commits).** |
+| [**Vigilo**](https://github.com/BitterSecurity/Vigilo) | ![stars](https://img.shields.io/github/stars/BitterSecurity/Vigilo?style=flat-square&label=%E2%98%85&color=0B1120) | AI hacker for Web3 smart contracts — built for bug bounties and audit contests. |
+| [**PurpleAILAB**](https://github.com/BitterSecurity/purpleailab.com) | ![stars](https://img.shields.io/github/stars/BitterSecurity/purpleailab.com?style=flat-square&label=%E2%98%85&color=0B1120) | Agentic cybersecurity harness, with its site and knowledge vault. |
 | [**AutoBot**](https://github.com/BitterSecurity/AutoBot) | ![stars](https://img.shields.io/github/stars/BitterSecurity/AutoBot?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous defense agent for the blue team. |
-| [**Cybertron**](https://github.com/BitterSecurity/Cybertron) | ![stars](https://img.shields.io/github/stars/BitterSecurity/Cybertron?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous security intelligence for humanity. |
+| [**Cybertron**](https://github.com/BitterSecurity/Cybertron) | ![stars](https://img.shields.io/github/stars/BitterSecurity/Cybertron?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous security-intelligence agent. |
 
-### 🧩 Open-source tooling
+## 🔬 Vulnerability research & reverse engineering
 
 | Project | Stars | What it is |
 | :--- | ---: | :--- |
-| [**claude-for-firefox**](https://github.com/NetVar1337/claude-for-firefox) | ![stars](https://img.shields.io/github/stars/NetVar1337/claude-for-firefox?style=flat-square&label=%E2%98%85&color=0B1120) | Claude for Firefox — community browser extension with sidebar chat and automation. |
-| [**omniwire**](https://github.com/NetVar1337/omniwire) | ![stars](https://img.shields.io/github/stars/NetVar1337/omniwire?style=flat-square&label=%E2%98%85&color=0B1120) | Infrastructure for AI agent swarms — 88 MCP tools, A2A protocol, mesh networking. |
-| [**KEVLAR**](https://github.com/NetVar1337/Kevlar) | ![stars](https://img.shields.io/github/stars/NetVar1337/Kevlar?style=flat-square&label=%E2%98%85&color=0B1120) | Windows x64 kernel-driver emulation and behaviour analysis, powered by Unicorn + Zydis. |
-| [**mcp-ctl**](https://github.com/NetVar1337/mcp-ctl) | ![stars](https://img.shields.io/github/stars/NetVar1337/mcp-ctl?style=flat-square&label=%E2%98%85&color=0B1120) | Zero-intervention MCP lifecycle manager for every AI CLI. Written in Zig. |
+| [**KEVLAR**](https://github.com/NetVar1337/Kevlar) | ![stars](https://img.shields.io/github/stars/NetVar1337/Kevlar?style=flat-square&label=%E2%98%85&color=0B1120) | Windows x64 kernel-driver emulation and behaviour analysis, built on Unicorn + Zydis. |
+| [**AiDA**](https://github.com/NetVar1337/AiDA-Fork) | ![stars](https://img.shields.io/github/stars/NetVar1337/AiDA-Fork?style=flat-square&label=%E2%98%85&color=0B1120) | Native C++ AI-assistant plugin for IDA Pro 9.x. |
+| [**audit-findings-skills**](https://github.com/NetVar1337/audit-findings-skills) | ![stars](https://img.shields.io/github/stars/NetVar1337/audit-findings-skills?style=flat-square&label=%E2%98%85&color=0B1120) | 23,625 smart-contract audit findings distilled into reusable review playbooks. |
+| [**linux-rk3576-rocket**](https://github.com/NetVar1337/linux-rk3576-rocket) | ![stars](https://img.shields.io/github/stars/NetVar1337/linux-rk3576-rocket?style=flat-square&label=%E2%98%85&color=0B1120) | RFC patch series adding RK3576 support to the mainline Linux Rocket NPU driver. |
 
-### 🔬 Independent research
+## 🧩 Agent infrastructure
 
-| Project | What it is |
-| :--- | :--- |
-| [**account-security**](https://github.com/NetVar1337/account-security) | Account takeover, credential stuffing, session abuse, and identity fraud for game platforms — graph-based analysis. |
-| [**cheat-intel**](https://github.com/NetVar1337/cheat-intel) | Cheat-community intelligence: monitoring methodology, trend reporting, and the intel → detection feedback loop. |
-| [**apex-anticheat-lab**](https://github.com/NetVar1337/apex-anticheat-lab) | FPS anti-cheat lab — runnable synthetic fixtures, cohort-aware baselines, explainable scores. |
-| [**audit-findings-skills**](https://github.com/NetVar1337/audit-findings-skills) | Audit workflow findings packaged as reusable agent skills. |
+| Project | Stars | What it is |
+| :--- | ---: | :--- |
+| [**claude-for-firefox**](https://github.com/NetVar1337/claude-for-firefox) | ![stars](https://img.shields.io/github/stars/NetVar1337/claude-for-firefox?style=flat-square&label=%E2%98%85&color=0B1120) | Community Firefox extension: Claude in the sidebar, with chat and browser automation. |
+| [**omniwire**](https://github.com/NetVar1337/omniwire) | ![stars](https://img.shields.io/github/stars/NetVar1337/omniwire?style=flat-square&label=%E2%98%85&color=0B1120) | Infrastructure for AI agent swarms — 88 MCP tools, A2A, mesh VPN, CDP browser. |
+| [**mcp-ctl**](https://github.com/NetVar1337/mcp-ctl) | ![stars](https://img.shields.io/github/stars/NetVar1337/mcp-ctl?style=flat-square&label=%E2%98%85&color=0B1120) | Zero-intervention MCP lifecycle manager for every AI CLI, written in Zig. |
 
-### 🔧 Systems, hardware & reverse engineering
-
-[**linux-rk3576-rocket**](https://github.com/NetVar1337/linux-rk3576-rocket) — RK3576 NPU RFC patch series for mainline Linux
-&nbsp;·&nbsp; [**AiDA**](https://github.com/NetVar1337/AiDA-Fork) — native C++ assistant plugin for IDA Pro 9.x
-&nbsp;·&nbsp; [**flipctld**](https://github.com/NetVar1337/flipctld) — menu-UI core for Flipper One
-&nbsp;·&nbsp; [**flipper-profile**](https://github.com/NetVar1337/flipper-profile) — btrfs + overlayfs snapshot profiles for Flipper One
-
-### 🤝 Open-source contributions
+## 🤝 Open-source contributions
 
 Merged upstream work — [all merged PRs ↗](https://github.com/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged+-user%3ANetVar1337)
 
@@ -89,14 +76,28 @@ Merged upstream work — [all merged PRs ↗](https://github.com/pulls?q=is%3Apr
 | [**sinnafuls/enma-lsp**](https://github.com/sinnafuls/enma-lsp/pull/1) | 1 | LSP feature-set expansion |
 
 <details>
-<summary><strong>Research scope &amp; limitations</strong></summary>
+<summary><strong>🛡️ Detection research — anti-cheat & account abuse</strong></summary>
+<br />
+
+| Project | What it is |
+| :--- | :--- |
+| [**account-security**](https://github.com/NetVar1337/account-security) | Account takeover, credential stuffing, session and inventory abuse detection for game platforms — graph-based analysis. |
+| [**cheat-intel**](https://github.com/NetVar1337/cheat-intel) | Cheat-community intelligence: monitoring methodology, trend reporting, and the intel → detection feedback loop. |
+| [**apex-anticheat-lab**](https://github.com/NetVar1337/apex-anticheat-lab) | FPS anti-cheat lab — runnable synthetic fixtures, cohort-aware baselines, explainable scores. |
 
 These are independent research projects, not evidence of production deployment or employment with a
-game studio or anti-cheat vendor.
+game studio or anti-cheat vendor. The lab uses **synthetic data**, and its YARA sketches are **not
+operational detection rules**.
 
-- The anti-cheat lab uses **synthetic data**.
-- Its YARA sketches are **not operational detection rules**.
-- Decepticon is separate work intended for **authorized red-team use**.
+</details>
+
+<details>
+<summary><strong>🔧 Hardware & embedded</strong></summary>
+<br />
+
+[**flipctld**](https://github.com/NetVar1337/flipctld) — menu-UI core for Flipper One (JSON manifests, D-pad navigation, ANSI + framebuffer)
+<br />[**flipper-profile**](https://github.com/NetVar1337/flipper-profile) — btrfs + overlayfs snapshot profiles for Flipper One
+<br />[**PCILeechGen contributions**](https://github.com/sercanarga/PCILeechGen/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged) — PCIe / NVMe device emulation in HDL
 
 </details>
 
@@ -112,19 +113,22 @@ game studio or anti-cheat vendor.
 Python · TypeScript · Rust · C++ · C · Go · Zig · Java · JavaScript · Solidity · Assembly · Bash
 
 **Reverse engineering**
-IDA Pro 9.x + IDAPython · Ghidra · radare2 · r2pipe · Unicorn · Zydis · Capstone · YARA · LIEF
+IDA Pro 9.x + IDAPython · Ghidra · x64dbg · radare2 · Unicorn · Zydis · Capstone · YARA · LIEF
+
+**Offensive security**
+Autonomous red-team agents · fuzzing · kernel-driver analysis · smart-contract auditing
 
 </td>
 <td width="50%" valign="top">
 
 **AI & agents**
-MCP (Model Context Protocol) · agent swarms · A2A · Playwright · Claude Code · Codex CLI · prompt engineering
+MCP (Model Context Protocol) · A2A · agent swarms · Playwright / CDP · Claude Code · Codex CLI
 
 **Systems**
 Linux kernel · eBPF · Tauri 2 · React · Node.js · Docker · GitHub Actions · PostgreSQL · Redis
 
 **Hardware**
-Flipper One · RP2350 · embedded firmware · USB protocol work
+PCIe / NVMe HDL · Flipper One · RP2350 · embedded firmware · USB protocol work
 
 </td>
 </tr>
@@ -132,24 +136,11 @@ Flipper One · RP2350 · embedded firmware · USB protocol work
 
 ---
 
-## 🧭 What I explore
+## ⚖️ How I work
 
-| | Focus | Questions that interest me |
-| :---: | :--- | :--- |
-| 🛡️ | **Security & ethical hacking** | Where are the attack paths, and how can authorized testing improve defenses? |
-| 🔬 | **Reverse engineering** | What does the software actually do beyond the source code? |
-| 🧠 | **AI / ML** | Where can models help security research and tooling? |
-| 🤖 | **Agent infrastructure** | How do you make autonomous agents reliable, inspectable, and safe to point at real systems? |
-| 🔗 | **Smart contracts & Web3** | Which trust assumptions break, and what happens when they do? |
-| 🌱 | **Open source** | How can shared, inspectable work help others build and learn? |
-
----
-
-## ⚖️ How I approach the work
-
-| **01 / Context** | **02 / Evidence** | **03 / Permission** |
+| **01 / Scope** | **02 / Evidence** | **03 / Disclosure** |
 | :--- | :--- | :--- |
-| Understand the threat model and what the data can establish. | Explain the detection, expose limitations, and make experiments reproducible. | Test within an explicitly authorized scope and disclose responsibly. |
+| Test only within an explicitly authorized scope, starting from the threat model. | Every finding ships with a reproducible proof and its limitations stated. | Report responsibly, and turn the lesson into tooling others can inspect. |
 
 ---
 
@@ -157,8 +148,6 @@ Flipper One · RP2350 · embedded firmware · USB protocol work
 
 <img src="./assets/stats.svg" width="460" alt="GitHub activity stats" />
 <img src="./assets/langs.svg" width="360" alt="Top languages" />
-
-## 🐍 Contribution graph
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/NetVar1337/NetVar1337/raw/output/github-contribution-grid-snake-dark.svg" />
@@ -170,11 +159,9 @@ Flipper One · RP2350 · embedded firmware · USB protocol work
 
 <div align="center">
 
-### Let's build something worth inspecting.
+### Open to security research & AI security roles.
 
-Open-source collaboration · Security research · Detection engineering · Agent infrastructure
-
-[**Find me on GitHub ↗**](https://github.com/NetVar1337) &nbsp;·&nbsp; [**Connect on X ↗**](https://x.com/NetVar1337) &nbsp;·&nbsp; [**TryHackMe ↗**](https://tryhackme.com/p/NetVar)
+[**Message me on X ↗**](https://x.com/NetVar1337) &nbsp;·&nbsp; [**hashward.io ↗**](https://hashward.io/) &nbsp;·&nbsp; [**decepticon.red ↗**](https://decepticon.red/)
 
 <sub>Build openly. Think adversarially. Verify the evidence.</sub>
 

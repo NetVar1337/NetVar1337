@@ -11,6 +11,7 @@ Usage:
 from __future__ import annotations
 
 import json
+import re
 import os
 import subprocess
 import sys
@@ -125,6 +126,7 @@ def collect_repos() -> list[dict]:
 def collect_stats(repos: list[dict]) -> dict:
     # profile + follower counts
     prof = graphql(f'''query {{ user(login:"{OWNER}") {{
+        createdAt
         followers {{ totalCount }}
         following {{ totalCount }}
         repositories(first:1) {{ totalCount }}
@@ -172,6 +174,7 @@ def collect_stats(repos: list[dict]) -> dict:
         "prs": prs,
         "issues": issues,
         "projects": len(repos),
+        "created_at": prof["createdAt"],
     }
 
 
@@ -350,6 +353,37 @@ def render_langs(langs: list[tuple[str, int]], stats: dict) -> str:
     return "\n".join(out) + "\n"
 
 
+# --- neofetch-style header card (assets/dark_mode.svg) -----------------------
+def set_field(svg: str, label: str, value: str) -> str:
+    """Replace one `Label: .... value` field, re-padding the dot leader so the column stays aligned."""
+    pat = re.compile(
+        r'(<tspan fill="#ffa657">' + re.escape(label) + r': </tspan><tspan fill="#484f58">)'
+        r'(\.+)( ?</tspan><tspan fill="#c9d1d9">)([^<]*)(</tspan>)'
+    )
+    m = pat.search(svg)
+    if not m:
+        raise ValueError(f"header field {label!r} not found")
+    dots = max(3, len(m.group(2)) + len(m.group(4)) - len(value))
+    return svg[:m.start()] + m.group(1) + "." * dots + m.group(3) + esc(value) + m.group(5) + svg[m.end():]
+
+
+def uptime(created_at: str, now: datetime) -> str:
+    start = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+    months = (now.year - start.year) * 12 + now.month - start.month - (now.day < start.day)
+    anchor_y, anchor_m = divmod(start.month - 1 + months, 12)
+    anchor = start.replace(year=start.year + anchor_y, month=anchor_m + 1)
+    days = (now - anchor).days
+    return f"{months // 12} years, {months % 12} months, {days} days"
+
+
+def render_header(svg: str, s: dict) -> str:
+    svg = set_field(svg, "GitHub", uptime(s["created_at"], datetime.now(timezone.utc)))
+    svg = set_field(svg, "Repos", str(s["public_repos"]))
+    svg = set_field(svg, "Stars", f"{s['stars']:,}")
+    svg = set_field(svg, "Commits", f"{s['commits']:,}")
+    return set_field(svg, "Followers", str(s["followers"]))
+
+
 def main() -> int:
     ASSETS.mkdir(parents=True, exist_ok=True)
     repos = collect_repos()
@@ -360,6 +394,8 @@ def main() -> int:
     (ASSETS / "langs.svg").write_text(render_langs(langs, stats), encoding="utf-8")
     (ASSETS / "stars.svg").write_text(render_stars_badge(stats), encoding="utf-8")
     (ASSETS / "followers.svg").write_text(render_followers_badge(stats), encoding="utf-8")
+    header = ASSETS / "dark_mode.svg"
+    header.write_text(render_header(header.read_text(encoding="utf-8"), stats), encoding="utf-8")
 
     print(json.dumps(stats, indent=2))
     print("languages:", [(n, s) for n, s in langs[:8]])
