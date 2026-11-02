@@ -75,6 +75,19 @@ Merged upstream work — [all merged PRs ↗](https://github.com/pulls?q=is%3Apr
 | [**oraios/serena**](https://github.com/oraios/serena/pull/1173) | 1 | Detect rust-analyzer from `PATH` without rustup |
 | [**sinnafuls/enma-lsp**](https://github.com/sinnafuls/enma-lsp/pull/1) | 1 | LSP feature-set expansion |
 
+### 🚢 Recently shipped
+
+<sub>Latest merged pull requests outside my own repos — refreshed daily by GitHub Actions.</sub>
+
+<!-- shipped:start -->
+- **[Recurse-Labs/recurse#7](https://github.com/Recurse-Labs/recurse/pull/7)** — feat: in-app auto-update, quick-install scripts, and signed release pipeline <sub>· 2026-10-29</sub>
+- **[x64dbg/x64dbg#4003](https://github.com/x64dbg/x64dbg/pull/4003)** — cross: build on macOS in CI <sub>· 2026-10-28</sub>
+- **[BitterSecurity/Decepticon#1112](https://github.com/BitterSecurity/Decepticon/pull/1112)** — test: measure core/SDK coverage and add core-SDK re-export contract test <sub>· 2026-10-26</sub>
+- **[BitterSecurity/docs#3](https://github.com/BitterSecurity/docs/pull/3)** — ci: local docs checks (mintlify validate + broken-links + EN/KO parity), optional Actions workflow <sub>· 2026-10-26</sub>
+- **[hashward-io/.github#3](https://github.com/hashward-io/.github/pull/3)** — fix(secret-scan): scan the PR range without an authenticated fetch <sub>· 2026-10-21</sub>
+- **[BitterSecurity/Decepticon#995](https://github.com/BitterSecurity/Decepticon/pull/995)** — feat(llm): optional vendor-neutral OpenAI-compatible gateway <sub>· 2026-10-17</sub>
+<!-- shipped:end -->
+
 <details>
 <summary><strong>🛡️ Detection research — anti-cheat & account abuse</strong></summary>
 <br />
@@ -105,12 +118,15 @@ operational detection rules**.
 
 ## 🧰 Toolchain
 
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=py,ts,rust,cpp,c,go,zig,java,js,solidity,bash&perline=11" alt="Python, TypeScript, Rust, C++, C, Go, Zig, Java, JavaScript, Solidity, Bash" />
+  <br />
+  <img src="https://skillicons.dev/icons?i=linux,windows,docker,githubactions,nodejs,react,tauri,postgres,redis,git&perline=10" alt="Linux, Windows, Docker, GitHub Actions, Node.js, React, Tauri, PostgreSQL, Redis, Git" />
+</p>
+
 <table>
 <tr>
 <td width="50%" valign="top">
-
-**Languages**
-Python · TypeScript · Rust · C++ · C · Go · Zig · Java · JavaScript · Solidity · Assembly · Bash
 
 **Reverse engineering**
 IDA Pro 9.x + IDAPython · Ghidra · x64dbg · radare2 · Unicorn · Zydis · Capstone · YARA · LIEF
@@ -124,11 +140,8 @@ Autonomous red-team agents · fuzzing · kernel-driver analysis · smart-contrac
 **AI & agents**
 MCP (Model Context Protocol) · A2A · agent swarms · Playwright / CDP · Claude Code · Codex CLI
 
-**Systems**
-Linux kernel · eBPF · Tauri 2 · React · Node.js · Docker · GitHub Actions · PostgreSQL · Redis
-
-**Hardware**
-PCIe / NVMe HDL · Flipper One · RP2350 · embedded firmware · USB protocol work
+**Low-level & hardware**
+Linux kernel · eBPF · PCIe / NVMe HDL · Flipper One · RP2350 · embedded firmware · USB protocol work
 
 </td>
 </tr>

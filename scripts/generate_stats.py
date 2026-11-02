@@ -384,6 +384,31 @@ def render_header(svg: str, s: dict) -> str:
     return set_field(svg, "Followers", str(s["followers"]))
 
 
+# --- "Recently shipped" list in README.md ------------------------------------
+SHIPPED_START, SHIPPED_END = "<!-- shipped:start -->", "<!-- shipped:end -->"
+# Repos kept off the public feed (game-cheat adjacent); noise-only PR types are skipped too.
+SHIPPED_DENY = {"LadyDarknes/League-Offsets", "sigwl/AiDAPrivate"}
+SHIPPED_SKIP = re.compile(r"^(chore|style|docs|build)(\(|:|!)", re.I)
+
+
+def collect_shipped(limit: int = 6) -> list[dict]:
+    data = graphql(f'''query {{ search(query:"is:pr is:merged author:{OWNER} -user:{OWNER} sort:updated-desc",
+        type:ISSUE, first:50) {{ nodes {{ ...on PullRequest {{ title url number mergedAt
+        repository {{ nameWithOwner isPrivate }} }} }} }} }}''')
+    prs = [n for n in data["search"]["nodes"]
+           if n and not n["repository"]["isPrivate"]
+           and n["repository"]["nameWithOwner"] not in SHIPPED_DENY
+           and not SHIPPED_SKIP.match(n["title"])]
+    return sorted(prs, key=lambda n: n["mergedAt"], reverse=True)[:limit]
+
+
+def render_shipped(readme: str, prs: list[dict]) -> str:
+    start, end = readme.index(SHIPPED_START), readme.index(SHIPPED_END)
+    lines = [f"- **[{p['repository']['nameWithOwner']}#{p['number']}]({p['url']})** — "
+             f"{p['title'].replace('|', '/').strip()} <sub>· {p['mergedAt'][:10]}</sub>" for p in prs]
+    return readme[:start + len(SHIPPED_START)] + "\n" + "\n".join(lines) + "\n" + readme[end:]
+
+
 def main() -> int:
     ASSETS.mkdir(parents=True, exist_ok=True)
     repos = collect_repos()
@@ -396,6 +421,8 @@ def main() -> int:
     (ASSETS / "followers.svg").write_text(render_followers_badge(stats), encoding="utf-8")
     header = ASSETS / "dark_mode.svg"
     header.write_text(render_header(header.read_text(encoding="utf-8"), stats), encoding="utf-8")
+    readme = ROOT / "README.md"
+    readme.write_text(render_shipped(readme.read_text(encoding="utf-8"), collect_shipped()), encoding="utf-8")
 
     print(json.dumps(stats, indent=2))
     print("languages:", [(n, s) for n, s in langs[:8]])
