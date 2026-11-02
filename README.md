@@ -6,7 +6,7 @@
 
 <a href="https://github.com/NetVar1337?tab=followers"><img src="./assets/followers.svg" alt="Followers on GitHub" /></a>
 <a href="https://github.com/NetVar1337?tab=repositories&sort=stargazers"><img src="./assets/stars.svg" alt="Stars earned across the repositories you author (forks excluded)" /></a>
-<a href="https://github.com/BitterSecurity/Decepticon"><img src="https://img.shields.io/badge/Decepticon-6.4k%E2%98%85-5EEAD4?style=for-the-badge&labelColor=0B1120" alt="Decepticon" /></a>
+<a href="https://github.com/BitterSecurity/Decepticon"><img src="https://img.shields.io/github/stars/BitterSecurity/Decepticon?style=for-the-badge&label=Decepticon&color=5EEAD4&labelColor=0B1120" alt="Decepticon stars" /></a>
 <img src="https://img.shields.io/badge/Reverse%20Engineering-00778D?style=for-the-badge&logoColor=white&color=F97316&labelColor=0B1120" alt="Reverse engineering" />
 <img src="https://img.shields.io/badge/AI%20%2F%20ML-A78BFA?style=for-the-badge&logo=openai&logoColor=white&color=A78BFA&labelColor=0B1120" alt="AI/ML" />
 <img src="https://img.shields.io/badge/Web3-3B82F6?style=for-the-badge&logoColor=white&color=3B82F6&labelColor=0B1120" alt="Web3" />
@@ -43,22 +43,20 @@ security**. Open source is where I share the work and learn from others.
 
 | Project | Stars | What it is |
 | :--- | ---: | :--- |
-| [**Decepticon**](https://github.com/BitterSecurity/Decepticon) | 6.4k | Autonomous hacking agent for authorized red-team operations. The largest public project I contribute to. |
-| [**Vigilo**](https://github.com/BitterSecurity/Vigilo) | 70 | AI hacker for Web3 smart contracts — built for bug bounties and audit workflows. |
-| [**PurpleAILAB**](https://github.com/BitterSecurity/purpleailab.com) | 7 | Agentic cybersecurity harness with its marketing site and knowledge vault. |
-| [**AutoBot**](https://github.com/BitterSecurity/AutoBot) | 1 | Autonomous defense agent for the blue team. |
-| [**Cybertron**](https://github.com/BitterSecurity/Cybertron) | 1 | Autonomous security intelligence for humanity. |
+| [**Decepticon**](https://github.com/BitterSecurity/Decepticon) | ![stars](https://img.shields.io/github/stars/BitterSecurity/Decepticon?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous hacking agent for authorized red-team operations. The largest public project I contribute to. |
+| [**Vigilo**](https://github.com/BitterSecurity/Vigilo) | ![stars](https://img.shields.io/github/stars/BitterSecurity/Vigilo?style=flat-square&label=%E2%98%85&color=0B1120) | AI hacker for Web3 smart contracts — built for bug bounties and audit workflows. |
+| [**PurpleAILAB**](https://github.com/BitterSecurity/purpleailab.com) | ![stars](https://img.shields.io/github/stars/BitterSecurity/purpleailab.com?style=flat-square&label=%E2%98%85&color=0B1120) | Agentic cybersecurity harness with its marketing site and knowledge vault. |
+| [**AutoBot**](https://github.com/BitterSecurity/AutoBot) | ![stars](https://img.shields.io/github/stars/BitterSecurity/AutoBot?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous defense agent for the blue team. |
+| [**Cybertron**](https://github.com/BitterSecurity/Cybertron) | ![stars](https://img.shields.io/github/stars/BitterSecurity/Cybertron?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous security intelligence for humanity. |
 
 ### 🧩 Open-source tooling
 
 | Project | Stars | What it is |
 | :--- | ---: | :--- |
-| [**vibe-island**](https://github.com/NetVar1337/vibe-island) | 70 | Dynamic Island for AI coding tools — Rust + Tauri, macOS / Windows / Linux. |
-| [**claude-for-firefox**](https://github.com/NetVar1337/claude-for-firefox) | 19 | Claude for Firefox — a community browser extension with sidebars. |
-| [**omniwire**](https://github.com/NetVar1337/omniwire) | 17 | Infrastructure for AI agent swarms — 88 MCP tools, A2A protocol, mesh networking. |
-| [**KEVLAR**](https://github.com/NetVar1337/Kevlar-Ultimate) | 6 | Windows x64 kernel-driver emulation and behaviour analysis, powered by Unicorn + Zydis. |
-| [**decepticon-ghidra-mcp**](https://github.com/NetVar1337/decepticon-ghidra-mcp) | 5 | Ghidra MCP — P-code, BSim, version tracking, and emulation. |
-| [**mcp-ctl**](https://github.com/NetVar1337/mcp-ctl) | 3 | Zero-intervention MCP lifecycle manager for every AI CLI. Written in Zig. |
+| [**claude-for-firefox**](https://github.com/NetVar1337/claude-for-firefox) | ![stars](https://img.shields.io/github/stars/NetVar1337/claude-for-firefox?style=flat-square&label=%E2%98%85&color=0B1120) | Claude for Firefox — community browser extension with sidebar chat and automation. |
+| [**omniwire**](https://github.com/NetVar1337/omniwire) | ![stars](https://img.shields.io/github/stars/NetVar1337/omniwire?style=flat-square&label=%E2%98%85&color=0B1120) | Infrastructure for AI agent swarms — 88 MCP tools, A2A protocol, mesh networking. |
+| [**KEVLAR**](https://github.com/NetVar1337/Kevlar) | ![stars](https://img.shields.io/github/stars/NetVar1337/Kevlar?style=flat-square&label=%E2%98%85&color=0B1120) | Windows x64 kernel-driver emulation and behaviour analysis, powered by Unicorn + Zydis. |
+| [**mcp-ctl**](https://github.com/NetVar1337/mcp-ctl) | ![stars](https://img.shields.io/github/stars/NetVar1337/mcp-ctl?style=flat-square&label=%E2%98%85&color=0B1120) | Zero-intervention MCP lifecycle manager for every AI CLI. Written in Zig. |
 
 ### 🔬 Independent research
 
@@ -71,11 +69,24 @@ security**. Open source is where I share the work and learn from others.
 
 ### 🔧 Systems, hardware & reverse engineering
 
-[**recurse**](https://github.com/NetVar1337/recurse) — AI-native IDE for reverse engineering
-&nbsp;·&nbsp; [**ultrafuzz**](https://github.com/NetVar1337/ultrafuzz) — agentic smart-contract fuzzing
-&nbsp;·&nbsp; [**flipperone-mcu-firmware**](https://github.com/NetVar1337/flipperone-mcu-firmware) — Flipper One RP2350 co-processor firmware
-&nbsp;·&nbsp; [**linux-rk3576-rocket**](https://github.com/NetVar1337/linux-rk3576-rocket) — RK3576 NPU RFC patch series for mainline
+[**linux-rk3576-rocket**](https://github.com/NetVar1337/linux-rk3576-rocket) — RK3576 NPU RFC patch series for mainline Linux
 &nbsp;·&nbsp; [**AiDA**](https://github.com/NetVar1337/AiDA-Fork) — native C++ assistant plugin for IDA Pro 9.x
+&nbsp;·&nbsp; [**flipctld**](https://github.com/NetVar1337/flipctld) — menu-UI core for Flipper One
+&nbsp;·&nbsp; [**flipper-profile**](https://github.com/NetVar1337/flipper-profile) — btrfs + overlayfs snapshot profiles for Flipper One
+
+### 🤝 Open-source contributions
+
+Merged upstream work — [all merged PRs ↗](https://github.com/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged+-user%3ANetVar1337)
+
+| Project | Merged PRs | Highlights |
+| :--- | :---: | :--- |
+| [**Recurse-Labs/recurse**](https://github.com/Recurse-Labs/recurse/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged) | 8 | Decompiler, symbolic execution, MCP server and Python bindings; VTIL-inspired de-virtualization IL; multi-provider AI auth; signed auto-update |
+| [**sercanarga/PCILeechGen**](https://github.com/sercanarga/PCILeechGen/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged) | 9 | NVMe admin/IO queue emulation in HDL, PRP2 page-crossing, offline mmiotrace import, VFIO diagnostics tests |
+| [**can1357/oh-my-pi**](https://github.com/can1357/oh-my-pi/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged) | 3 | MCP stdio broken-pipe handling, Ollama 5xx retries and history sanitising |
+| [**anthropics/claude-code-action**](https://github.com/anthropics/claude-code-action/pull/1055) | 1 | Fix `claude_args` parsing of shell comment lines |
+| [**x64dbg/x64dbg**](https://github.com/x64dbg/x64dbg/pull/4003) | 1 | macOS cross-build in CI |
+| [**oraios/serena**](https://github.com/oraios/serena/pull/1173) | 1 | Detect rust-analyzer from `PATH` without rustup |
+| [**sinnafuls/enma-lsp**](https://github.com/sinnafuls/enma-lsp/pull/1) | 1 | LSP feature-set expansion |
 
 <details>
 <summary><strong>Research scope &amp; limitations</strong></summary>

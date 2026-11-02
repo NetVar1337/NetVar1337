@@ -32,7 +32,7 @@
       <rect width="1136" height="132" rx="16" fill="#080e1a" stroke="#1e293b"/>
       <g>
         <rect x="0" y="0" width="1136" height="3" rx="1.5" fill="url(#accent)"/>
-        <text x="40" y="66" fill="#e2e8f0" font-size="46" font-weight="700">6.4k</text>
+        <text x="40" y="66" fill="#e2e8f0" font-size="46" font-weight="700">6.5k</text>
         <text x="40" y="96" fill="#94a3b8" font-size="16">Decepticon stars</text>
 
         <text x="330" y="66" fill="#e2e8f0" font-size="46" font-weight="700">30</text>
