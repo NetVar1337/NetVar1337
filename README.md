@@ -1,15 +1,17 @@
-<p align="center">
-  <img alt="NetVar1337 — security researcher, Norway" src="./assets/dark_mode.svg" width="100%" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="./assets/banner.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/dark_mode.svg" />
+  <img alt="NetVar1337 — security researcher · reverse engineer · AI security" src="./assets/dark_mode.svg" width="100%" />
+</picture>
 
 <div align="center">
 
 <a href="https://github.com/NetVar1337?tab=followers"><img src="./assets/followers.svg" alt="Followers on GitHub" /></a>
 <a href="https://github.com/NetVar1337?tab=repositories&sort=stargazers"><img src="./assets/stars.svg" alt="Stars earned across the repositories I author (forks excluded)" /></a>
-<a href="https://github.com/BitterSecurity/Decepticon"><img src="https://img.shields.io/github/stars/BitterSecurity/Decepticon?style=for-the-badge&label=Decepticon&color=5EEAD4&labelColor=0B1120" alt="Decepticon stars" /></a>
-<img src="https://img.shields.io/badge/Vulnerability%20Research-F97316?style=for-the-badge&labelColor=0B1120" alt="Vulnerability research" />
-<img src="https://img.shields.io/badge/AI%20Security-A78BFA?style=for-the-badge&labelColor=0B1120" alt="AI security" />
-<img src="https://img.shields.io/badge/Reverse%20Engineering-3B82F6?style=for-the-badge&labelColor=0B1120" alt="Reverse engineering" />
+<a href="https://github.com/BitterSecurity/Decepticon"><img src="https://img.shields.io/github/stars/BitterSecurity/Decepticon?style=flat-square&label=Decepticon%20%E2%98%85&color=5EEAD4&labelColor=0B1120" alt="Decepticon stars" /></a>
+<a href="https://github.com/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged+-user%3ANetVar1337"><img src="https://img.shields.io/badge/26%2B%20merged%20PRs-A78BFA?style=flat-square&labelColor=0B1120" alt="Merged pull requests authored by NetVar1337" /></a>
+<a href="https://x.com/NetVar1337"><img src="https://img.shields.io/badge/Open%20to%20work-22C55E?style=flat-square&labelColor=0B1120" alt="Open to security research and AI security roles" /></a>
+<a href="https://github.com/sponsors/NetVar1337"><img src="https://img.shields.io/badge/Sponsor-EA4AAA?style=flat-square&logo=githubsponsors&logoColor=white&labelColor=0B1120" alt="Sponsor NetVar1337 on GitHub" /></a>
 
 <br />
 
@@ -17,9 +19,15 @@
 
 [**Decepticon ↗**](https://decepticon.red/) &nbsp;·&nbsp; [**hashward ↗**](https://hashward.io/) &nbsp;·&nbsp; [**BitterSecurity ↗**](https://bittersecurity.com/) &nbsp;·&nbsp; [**X ↗**](https://x.com/NetVar1337) &nbsp;·&nbsp; [**TryHackMe ↗**](https://tryhackme.com/p/NetVar)
 
+<br />
+
+**[About](#about)** · **[Now](#now)** · **[Projects](#projects)** · **[Contributions](#contributions)** · **[Toolchain](#toolchain)** · **[Activity](#activity)** · **[Contact](#contact)**
+
 </div>
 
 <br />
+
+<a id="about"></a>
 
 ## 👋 About
 
@@ -32,9 +40,21 @@ software that finds, verifies, and explains vulnerabilities on real systems, wit
 - 🔩 **Full-stack low-level work** — Windows kernel-driver emulation, Linux kernel patches, PCIe/NVMe HDL, and IDA / Ghidra / x64dbg tooling.
 - 🟢 **Open to security research, vulnerability research, and AI security roles** — reach me on [X](https://x.com/NetVar1337) or via [hashward.io](https://hashward.io/).
 
+<a id="now"></a>
+
+## ⚡ Currently
+
+- Building **[Decepticon](https://decepticon.red/)** and **[hashward](https://hashward.io/)** — autonomous offensive-security agents and the RE tooling behind them.
+- Maintaining **[KEVLAR](https://github.com/NetVar1337/Kevlar)**, **[omniwire](https://github.com/NetVar1337/omniwire)** and **[mcp-ctl](https://github.com/NetVar1337/mcp-ctl)** — kernel-driver emulation and agent infrastructure.
+- Landing upstream PRs ([Recurse](https://github.com/Recurse-Labs/recurse), [PCILeechGen](https://github.com/sercanarga/PCILeechGen), [x64dbg](https://github.com/x64dbg/x64dbg), [oh-my-pi](https://github.com/can1357/oh-my-pi), …) and publishing audit playbooks via **[audit-findings-skills](https://github.com/NetVar1337/audit-findings-skills)**.
+
 ---
 
-## 🤖 AI security — autonomous agents
+<a id="projects"></a>
+
+## 🚀 Featured projects
+
+### 🤖 AI security — autonomous agents
 
 | Project | Stars | What it is |
 | :--- | ---: | :--- |
@@ -44,7 +64,7 @@ software that finds, verifies, and explains vulnerabilities on real systems, wit
 | [**AutoBot**](https://github.com/BitterSecurity/AutoBot) | ![stars](https://img.shields.io/github/stars/BitterSecurity/AutoBot?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous defense agent for the blue team. |
 | [**Cybertron**](https://github.com/BitterSecurity/Cybertron) | ![stars](https://img.shields.io/github/stars/BitterSecurity/Cybertron?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous security-intelligence agent. |
 
-## 🔬 Vulnerability research & reverse engineering
+### 🔬 Vulnerability research & reverse engineering
 
 | Project | What it is |
 | :--- | :--- |
@@ -53,13 +73,17 @@ software that finds, verifies, and explains vulnerabilities on real systems, wit
 | [**audit-findings-skills**](https://github.com/NetVar1337/audit-findings-skills) | 23,625 smart-contract audit findings distilled into reusable review playbooks. |
 | [**linux-rk3576-rocket**](https://github.com/NetVar1337/linux-rk3576-rocket) | RFC patch series adding RK3576 support to the mainline Linux Rocket NPU driver. |
 
-## 🧩 Agent infrastructure
+### 🧩 Agent infrastructure
 
 | Project | Stars | What it is |
 | :--- | ---: | :--- |
 | [**claude-for-firefox**](https://github.com/NetVar1337/claude-for-firefox) | ![stars](https://img.shields.io/github/stars/NetVar1337/claude-for-firefox?style=flat-square&label=%E2%98%85&color=0B1120) | Community Firefox extension: Claude in the sidebar, with chat and browser automation. |
 | [**omniwire**](https://github.com/NetVar1337/omniwire) | ![stars](https://img.shields.io/github/stars/NetVar1337/omniwire?style=flat-square&label=%E2%98%85&color=0B1120) | Infrastructure for AI agent swarms — 88 MCP tools, A2A, mesh VPN, CDP browser. |
 | [**mcp-ctl**](https://github.com/NetVar1337/mcp-ctl) | ![stars](https://img.shields.io/github/stars/NetVar1337/mcp-ctl?style=flat-square&label=%E2%98%85&color=0B1120) | Zero-intervention MCP lifecycle manager for every AI CLI, written in Zig. |
+
+---
+
+<a id="contributions"></a>
 
 ## 🤝 Open-source contributions
 
@@ -116,6 +140,8 @@ operational detection rules**.
 
 ---
 
+<a id="toolchain"></a>
+
 ## 🧰 Toolchain
 
 <p align="center">
@@ -129,18 +155,22 @@ operational detection rules**.
 <td width="50%" valign="top">
 
 **Reverse engineering**
+
 IDA Pro 9.x + IDAPython · Ghidra · x64dbg · radare2 · Unicorn · Zydis · Capstone · YARA · LIEF
 
 **Offensive security**
+
 Autonomous red-team agents · fuzzing · kernel-driver analysis · smart-contract auditing
 
 </td>
 <td width="50%" valign="top">
 
 **AI & agents**
+
 MCP (Model Context Protocol) · A2A · agent swarms · Playwright / CDP · Claude Code · Codex CLI
 
 **Low-level & hardware**
+
 Linux kernel · eBPF · PCIe / NVMe HDL · Flipper One · RP2350 · embedded firmware · USB protocol work
 
 </td>
@@ -157,10 +187,18 @@ Linux kernel · eBPF · PCIe / NVMe HDL · Flipper One · RP2350 · embedded fir
 
 ---
 
-## 📊 GitHub activity
+<a id="activity"></a>
 
-<img src="./assets/stats.svg" width="460" alt="GitHub activity stats" />
-<img src="./assets/langs.svg" width="360" alt="Top languages" />
+## 📊 Activity
+
+<p align="center">
+  <img src="./assets/stats.svg" width="460" alt="GitHub activity stats" />
+  <img src="./assets/langs.svg" width="360" alt="Top languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NetVar1337&background=0B1120&stroke=5EEAD4&ring=5EEAD4&fire=F97316&currStreakNum=5EEAD4&sideNums=A78BFA&currStreakLabel=A78BFA&sideLabels=8B949E&dates=8B949E&hide_border=true" alt="GitHub contribution streak" />
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/NetVar1337/NetVar1337/raw/output/github-contribution-grid-snake-dark.svg" />
@@ -170,11 +208,21 @@ Linux kernel · eBPF · PCIe / NVMe HDL · Flipper One · RP2350 · embedded fir
 
 ---
 
+<a id="contact"></a>
+
+## 📬 Get in touch
+
+Open to **security research, vulnerability research, and AI security roles**.
+
+| Channel | Link |
+| :--- | :--- |
+| X / Twitter | [**@NetVar1337 ↗**](https://x.com/NetVar1337) — fastest way to reach me |
+| Company | [**hashward.io ↗**](https://hashward.io/) |
+| Product | [**decepticon.red ↗**](https://decepticon.red/) |
+| CTF profile | [**TryHackMe ↗**](https://tryhackme.com/p/NetVar) |
+| Support the work | [**Sponsor on GitHub ↗**](https://github.com/sponsors/NetVar1337) |
+
 <div align="center">
-
-### Open to security research & AI security roles.
-
-[**Message me on X ↗**](https://x.com/NetVar1337) &nbsp;·&nbsp; [**hashward.io ↗**](https://hashward.io/) &nbsp;·&nbsp; [**decepticon.red ↗**](https://decepticon.red/)
 
 <sub>Build openly. Think adversarially. Verify the evidence.</sub>
 
