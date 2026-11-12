@@ -104,12 +104,12 @@ Merged upstream work — [all merged PRs ↗](https://github.com/pulls?q=is%3Apr
 <sub>Latest merged pull requests outside my own repos — refreshed daily by GitHub Actions.</sub>
 
 <!-- shipped:start -->
+- **[Pharaoh2k/ps4debug-NG#3](https://github.com/Pharaoh2k/ps4debug-NG/pull/3)** — PROTOCOL.md: fix reg64 size, fw encoding, fpu size <sub>· 2026-11-12</sub>
 - **[can1357/oh-my-pi#18465](https://github.com/can1357/oh-my-pi/pull/18465)** — fix(tui): hold a relayed win32 OSC/DCS/APC string until its terminator <sub>· 2026-11-08</sub>
 - **[Recurse-Labs/recurse#7](https://github.com/Recurse-Labs/recurse/pull/7)** — feat: in-app auto-update, quick-install scripts, and signed release pipeline <sub>· 2026-10-29</sub>
 - **[x64dbg/x64dbg#4003](https://github.com/x64dbg/x64dbg/pull/4003)** — cross: build on macOS in CI <sub>· 2026-10-28</sub>
 - **[BitterSecurity/Decepticon#1112](https://github.com/BitterSecurity/Decepticon/pull/1112)** — test: measure core/SDK coverage and add core-SDK re-export contract test <sub>· 2026-10-26</sub>
 - **[BitterSecurity/docs#3](https://github.com/BitterSecurity/docs/pull/3)** — ci: local docs checks (mintlify validate + broken-links + EN/KO parity), optional Actions workflow <sub>· 2026-10-26</sub>
-- **[hashward-io/.github#3](https://github.com/hashward-io/.github/pull/3)** — fix(secret-scan): scan the PR range without an authenticated fetch <sub>· 2026-10-21</sub>
 <!-- shipped:end -->
 
 <details>
