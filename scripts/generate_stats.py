@@ -403,6 +403,8 @@ def collect_shipped(limit: int = 6) -> list[dict]:
 
 
 def render_shipped(readme: str, prs: list[dict]) -> str:
+    if SHIPPED_START not in readme:  # section removed from the README
+        return readme
     start, end = readme.index(SHIPPED_START), readme.index(SHIPPED_END)
     lines = [f"- **[{p['repository']['nameWithOwner']}#{p['number']}]({p['url']})** — "
              f"{p['title'].replace('|', '/').strip()} <sub>· {p['mergedAt'][:10]}</sub>" for p in prs]
