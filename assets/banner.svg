@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="hw-banner-title hw-banner-desc">
-  <title id="hw-banner-title">NetVar1337 — security research, reverse engineering, AI/ML</title>
+  <title id="hw-banner-title">NetVar1337 — security research, harness engineering, agentic AI</title>
   <desc id="hw-banner-desc">Hashward brand banner: a vermilion reviewer's mark, the name NetVar1337, the line Build openly. Think adversarially. Verify the evidence., and a parchment field-notes sheet.</desc>
 
   <defs>
@@ -21,7 +21,7 @@
 
   <!-- reviewer's mark + eyebrow -->
   <rect x="64" y="46" width="10" height="10" fill="#e24a2a"/>
-  <text class="code" x="84" y="56" fill="#969084" font-size="11" letter-spacing="1.5">SECURITY RESEARCH · REVERSE ENGINEERING · OPEN SOURCE</text>
+  <text class="code" x="84" y="56" fill="#969084" font-size="11" letter-spacing="1.5">SECURITY RESEARCH · HARNESS ENGINEERING · AGENTIC AI</text>
 
   <!-- wordmark -->
   <text class="display" x="60" y="146" fill="#f2efe8" font-size="78" letter-spacing="-1"

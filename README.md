@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="./assets/banner.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="./assets/dark_mode.svg" />
-  <img alt="NetVar1337 — security researcher · reverse engineer · AI security" src="./assets/dark_mode.svg" width="100%" />
+  <img alt="NetVar1337 — security researcher · harness engineer · agentic AI" src="./assets/dark_mode.svg" width="100%" />
 </picture>
 
 <div align="center">
@@ -15,7 +15,7 @@
 
 <br />
 
-**Security researcher · AI security & agent engineering · Reverse engineer · Norway 🇳🇴**
+**Security Researcher · Harness Engineer · Agentic AI · Norway**
 
 [**Decepticon ↗**](https://decepticon.red/) &nbsp;·&nbsp; [**hashward ↗**](https://hashward.io/) &nbsp;·&nbsp; [**BitterSecurity ↗**](https://bittersecurity.com/) &nbsp;·&nbsp; [**X ↗**](https://x.com/NetVar1337) &nbsp;·&nbsp; [**TryHackMe ↗**](https://tryhackme.com/p/NetVar)
 
@@ -29,22 +29,25 @@
 
 <a id="about"></a>
 
-## 👋 About
+## About
 
-I'm **NetVar** — founder of **hashward** and co-founder of **BitterSecurity**. I build autonomous
-offensive-security agents and the reverse-engineering tooling and agent infrastructure behind them:
-software that finds, verifies, and explains vulnerabilities on real systems, within an authorized scope.
+I'm **NetVar** — founder of **hashward** and co-founder of **BitterSecurity**. I work where security
+research meets agentic AI: I build the harnesses that let autonomous agents do real security work — the
+tools, sandboxes, debugger and emulator bindings, and verification loops that turn a model into something
+that finds, proves, and explains vulnerabilities on real systems, within an authorized scope.
 
-- 🥈 **#2 all-time contributor to [Decepticon](https://github.com/BitterSecurity/Decepticon)** — an autonomous red-team agent with 6.5k★, where I've landed 400+ commits.
-- 🤝 **26 merged PRs to other people's projects**, including [Anthropic's claude-code-action](https://github.com/anthropics/claude-code-action/pull/1055), [x64dbg](https://github.com/x64dbg/x64dbg/pull/4003), [Serena](https://github.com/oraios/serena/pull/1173), and 8 feature PRs to the [Recurse](https://github.com/Recurse-Labs/recurse) RE IDE.
-- 🔩 **Full-stack low-level work** — Windows kernel-driver emulation, Linux kernel patches, PCIe/NVMe HDL, and IDA / Ghidra / x64dbg tooling.
-- 🟢 **Open to security research, vulnerability research, and AI security roles** — reach me on [X](https://x.com/NetVar1337) or via [hashward.io](https://hashward.io/).
+- **Security research** — Windows kernel-driver emulation, Linux kernel patches, PCIe/NVMe HDL, and IDA / Ghidra / x64dbg tooling.
+- **Harness engineering** — MCP servers, agent infrastructure, and reverse-engineering workbenches designed to be driven by agents as well as people.
+- **#2 all-time contributor to [Decepticon](https://github.com/BitterSecurity/Decepticon)** — an autonomous red-team agent with 6.6k★, where I've landed 400+ commits.
+- **26 merged PRs to other people's projects**, including [Anthropic's claude-code-action](https://github.com/anthropics/claude-code-action/pull/1055), [x64dbg](https://github.com/x64dbg/x64dbg/pull/4003), [Serena](https://github.com/oraios/serena/pull/1173), and 8 feature PRs to the [Recurse](https://github.com/Recurse-Labs/recurse) RE IDE.
+- **Open to security research, vulnerability research, and AI security roles** — reach me on [X](https://x.com/NetVar1337) or via [hashward.io](https://hashward.io/).
 
 <a id="now"></a>
 
-## ⚡ Currently
+## Currently
 
 - Building **[Decepticon](https://decepticon.red/)** and **[hashward](https://hashward.io/)** — autonomous offensive-security agents and the RE tooling behind them.
+- Building **[EchoDebug](https://github.com/NetVar1337/EchoDebug)** and **[SlopStation](https://github.com/NetVar1337/SlopStation)** — reverse-engineering workbenches with built-in MCP control for agents.
 - Maintaining **[KEVLAR](https://github.com/NetVar1337/Kevlar)**, **[omniwire](https://github.com/NetVar1337/omniwire)** and **[mcp-ctl](https://github.com/NetVar1337/mcp-ctl)** — kernel-driver emulation and agent infrastructure.
 - Landing upstream PRs ([Recurse](https://github.com/Recurse-Labs/recurse), [PCILeechGen](https://github.com/sercanarga/PCILeechGen), [x64dbg](https://github.com/x64dbg/x64dbg), [oh-my-pi](https://github.com/can1357/oh-my-pi), …) and publishing audit playbooks via **[audit-findings-skills](https://github.com/NetVar1337/audit-findings-skills)**.
 
@@ -52,9 +55,9 @@ software that finds, verifies, and explains vulnerabilities on real systems, wit
 
 <a id="projects"></a>
 
-## 🚀 Featured projects
+## Featured projects
 
-### 🤖 AI security — autonomous agents
+### Autonomous security agents
 
 | Project | Stars | What it is |
 | :--- | ---: | :--- |
@@ -64,16 +67,19 @@ software that finds, verifies, and explains vulnerabilities on real systems, wit
 | [**AutoBot**](https://github.com/BitterSecurity/AutoBot) | ![stars](https://img.shields.io/github/stars/BitterSecurity/AutoBot?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous defense agent for the blue team. |
 | [**Cybertron**](https://github.com/BitterSecurity/Cybertron) | ![stars](https://img.shields.io/github/stars/BitterSecurity/Cybertron?style=flat-square&label=%E2%98%85&color=0B1120) | Autonomous security-intelligence agent. |
 
-### 🔬 Vulnerability research & reverse engineering
+### Vulnerability research & reverse engineering
 
 | Project | What it is |
 | :--- | :--- |
 | [**KEVLAR**](https://github.com/NetVar1337/Kevlar) | Windows x64 kernel-driver emulation and behaviour analysis, built on Unicorn + Zydis. |
+| [**EchoDebug**](https://github.com/NetVar1337/EchoDebug) | Windows reverse-engineering workbench (Tauri + React) with a WebSocket relay and an MCP server for agent-driven analysis. |
+| [**SlopStation**](https://github.com/NetVar1337/SlopStation) | PS4 reverse-engineering workbench: live memory, debugger, scanner, decompiler, x86-64 emulator, Lua and MCP. |
+| [**ps4debug-mcp**](https://github.com/NetVar1337/ps4debug-mcp) | MCP server and Python client for ps4debug-NG — agent-driven dynamic analysis on console targets. |
 | [**AiDA**](https://github.com/NetVar1337/AiDA-Fork) | Native C++ AI-assistant plugin for IDA Pro 9.x. |
 | [**audit-findings-skills**](https://github.com/NetVar1337/audit-findings-skills) | 23,625 smart-contract audit findings distilled into reusable review playbooks. |
 | [**linux-rk3576-rocket**](https://github.com/NetVar1337/linux-rk3576-rocket) | RFC patch series adding RK3576 support to the mainline Linux Rocket NPU driver. |
 
-### 🧩 Agent infrastructure
+### Agent harnesses & infrastructure
 
 | Project | Stars | What it is |
 | :--- | ---: | :--- |
@@ -85,7 +91,7 @@ software that finds, verifies, and explains vulnerabilities on real systems, wit
 
 <a id="contributions"></a>
 
-## 🤝 Open-source contributions
+## Open-source contributions
 
 Merged upstream work — [all merged PRs ↗](https://github.com/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged+-user%3ANetVar1337)
 
@@ -93,13 +99,13 @@ Merged upstream work — [all merged PRs ↗](https://github.com/pulls?q=is%3Apr
 | :--- | :---: | :--- |
 | [**Recurse-Labs/recurse**](https://github.com/Recurse-Labs/recurse/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged) | 8 | Decompiler, symbolic execution, MCP server and Python bindings; VTIL-inspired de-virtualization IL; multi-provider AI auth; signed auto-update |
 | [**sercanarga/PCILeechGen**](https://github.com/sercanarga/PCILeechGen/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged) | 9 | NVMe admin/IO queue emulation in HDL, PRP2 page-crossing, offline mmiotrace import, VFIO diagnostics tests |
-| [**can1357/oh-my-pi**](https://github.com/can1357/oh-my-pi/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged) | 3 | MCP stdio broken-pipe handling, Ollama 5xx retries and history sanitising |
+| [**can1357/oh-my-pi**](https://github.com/can1357/oh-my-pi/pulls?q=is%3Apr+author%3ANetVar1337+is%3Amerged) | 4 | MCP stdio broken-pipe handling, Ollama 5xx retries and history sanitising, Win32 terminal escape-sequence relay fix |
 | [**anthropics/claude-code-action**](https://github.com/anthropics/claude-code-action/pull/1055) | 1 | Fix `claude_args` parsing of shell comment lines |
 | [**x64dbg/x64dbg**](https://github.com/x64dbg/x64dbg/pull/4003) | 1 | macOS cross-build in CI |
 | [**oraios/serena**](https://github.com/oraios/serena/pull/1173) | 1 | Detect rust-analyzer from `PATH` without rustup |
 | [**sinnafuls/enma-lsp**](https://github.com/sinnafuls/enma-lsp/pull/1) | 1 | LSP feature-set expansion |
 
-### 🚢 Recently shipped
+### Recently shipped
 
 <sub>Latest merged pull requests outside my own repos — refreshed daily by GitHub Actions.</sub>
 
@@ -113,7 +119,7 @@ Merged upstream work — [all merged PRs ↗](https://github.com/pulls?q=is%3Apr
 <!-- shipped:end -->
 
 <details>
-<summary><strong>🛡️ Detection research — anti-cheat & account abuse</strong></summary>
+<summary><strong>Detection research — anti-cheat & account abuse</strong></summary>
 <br />
 
 | Project | What it is |
@@ -129,7 +135,7 @@ operational detection rules**.
 </details>
 
 <details>
-<summary><strong>🔧 Hardware & embedded</strong></summary>
+<summary><strong>Hardware & embedded</strong></summary>
 <br />
 
 [**flipctld**](https://github.com/NetVar1337/flipctld) — menu-UI core for Flipper One (JSON manifests, D-pad navigation, ANSI + framebuffer)
@@ -142,7 +148,7 @@ operational detection rules**.
 
 <a id="toolchain"></a>
 
-## 🧰 Toolchain
+## Toolchain
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=py,ts,rust,cpp,c,go,zig,java,js,solidity,bash&perline=11" alt="Python, TypeScript, Rust, C++, C, Go, Zig, Java, JavaScript, Solidity, Bash" />
@@ -165,9 +171,9 @@ Autonomous red-team agents · fuzzing · kernel-driver analysis · smart-contrac
 </td>
 <td width="50%" valign="top">
 
-**AI & agents**
+**Agent harnesses**
 
-MCP (Model Context Protocol) · A2A · agent swarms · Playwright / CDP · Claude Code · Codex CLI
+Harness & tool design · MCP (Model Context Protocol) · A2A · agent swarms · Playwright / CDP · Claude Code · Codex CLI
 
 **Low-level & hardware**
 
@@ -179,7 +185,7 @@ Linux kernel · eBPF · PCIe / NVMe HDL · Flipper One · RP2350 · embedded fir
 
 ---
 
-## ⚖️ How I work
+## How I work
 
 | **01 / Scope** | **02 / Evidence** | **03 / Disclosure** |
 | :--- | :--- | :--- |
@@ -189,28 +195,18 @@ Linux kernel · eBPF · PCIe / NVMe HDL · Flipper One · RP2350 · embedded fir
 
 <a id="activity"></a>
 
-## 📊 Activity
+## Activity
 
 <p align="center">
   <img src="./assets/stats.svg" width="460" alt="GitHub activity stats" />
   <img src="./assets/langs.svg" width="360" alt="Top languages" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NetVar1337&background=0B1120&stroke=5EEAD4&ring=5EEAD4&fire=F97316&currStreakNum=5EEAD4&sideNums=A78BFA&currStreakLabel=A78BFA&sideLabels=8B949E&dates=8B949E&hide_border=true" alt="GitHub contribution streak" />
-</p>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/NetVar1337/NetVar1337/raw/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/NetVar1337/NetVar1337/raw/output/github-contribution-grid-snake.svg" />
-  <img alt="NetVar1337 contribution graph" src="https://github.com/NetVar1337/NetVar1337/raw/output/github-contribution-grid-snake.svg" />
-</picture>
-
 ---
 
 <a id="contact"></a>
 
-## 📬 Get in touch
+## Get in touch
 
 Open to **security research, vulnerability research, and AI security roles**.
 
