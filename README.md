@@ -10,7 +10,7 @@
 
 <a href="https://github.com/BitterSecurity/Decepticon"><img src="https://img.shields.io/github/stars/BitterSecurity/Decepticon?style=flat-square&label=Decepticon%20%E2%98%85&color=5EEAD4&labelColor=0B1120" alt="Decepticon stars" /></a>
 <a href="https://github.com/NetVar1337?tab=followers"><img src="./assets/followers.svg" alt="Followers on GitHub" /></a>
-<a href="https://x.com/NetVar1337"><img src="https://img.shields.io/badge/Open%20to%20work-22C55E?style=flat-square&labelColor=0B1120" alt="Open to security research and AI security roles" /></a>
+<a href="https://bittersecurity.com"><img src="https://img.shields.io/badge/Security%20Research%20%26%20Consulting-22C55E?style=flat-square&labelColor=0B1120" alt="Available for security research and AI security consulting" /></a>
 
 </div>
 
@@ -18,7 +18,17 @@ I build the harnesses that let autonomous agents do real security work — tools
 bindings and verification loops. Founder of [hashward](https://hashward.io/), co-founder of
 [BitterSecurity](https://bittersecurity.com/), based in Norway.
 
-## Projects
+## Selected Projects
+
+| Project | Stack | Description |
+| :--- | :--- | :--- |
+| [**omniwire**](https://github.com/NetVar1337/omniwire) | TypeScript · MCP | Infrastructure for AI agent swarms — 88 MCP tools, A2A, mesh VPN, CDP browser, 2FA. |
+| [**Kevlar**](https://github.com/NetVar1337/Kevlar) | C++ · Kernel | Unified Windows kernel-driver emulation and analysis harness. |
+| [**EchoDebug**](https://github.com/NetVar1337/EchoDebug) | Tauri · React · MCP | Windows reverse-engineering workbench with a WebSocket relay and MCP server. |
+| [**claude-for-firefox**](https://github.com/NetVar1337/claude-for-firefox) | WebExtensions · JS | Community Firefox browser extension for Claude with sidebar chat and automation. |
+| [**mcp-ctl**](https://github.com/NetVar1337/mcp-ctl) | Zig · Python | Zero-intervention MCP lifecycle manager for AI CLIs. |
+
+## Open Source & Upstream Work
 
 | Project | Stars | My work |
 | :--- | :---: | :--- |
@@ -41,6 +51,6 @@ bindings and verification loops. Founder of [hashward](https://hashward.io/), co
 
 <div align="center">
 
-[**X**](https://x.com/NetVar1337) &nbsp;·&nbsp; [**hashward.io**](https://hashward.io/) &nbsp;·&nbsp; [**decepticon.red**](https://decepticon.red/) &nbsp;·&nbsp; [**TryHackMe**](https://tryhackme.com/p/NetVar)
+[**X**](https://x.com/NetVar1337) &nbsp;·&nbsp; [**hashward.io**](https://hashward.io/) &nbsp;·&nbsp; [**bittersecurity.com**](https://bittersecurity.com/) &nbsp;·&nbsp; [**decepticon.red**](https://decepticon.red/) &nbsp;·&nbsp; [**TryHackMe**](https://tryhackme.com/p/NetVar)
 
 </div>
