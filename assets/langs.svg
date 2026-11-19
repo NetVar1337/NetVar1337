@@ -7,31 +7,31 @@
   <rect x="0.5" y="0.5" width="379" height="227" rx="10" fill="none" stroke="#2A2925" stroke-width="1"/>
   <rect x="22" y="23" width="8" height="8" fill="#E24A2A"/>
   <text x="38" y="31" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11.5" font-weight="700" letter-spacing="1.2" fill="#F2EFE8">TOP LANGUAGES</text>
-  <text x="358" y="31" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#969084">35 repos</text>
-  <text x="22" y="66" font-family="Segoe UI, Noto Sans, sans-serif" font-size="12" fill="#F2EFE8">TypeScript</text>
+  <text x="358" y="31" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#969084">27 repos</text>
+  <text x="22" y="66" font-family="Segoe UI, Noto Sans, sans-serif" font-size="12" fill="#F2EFE8">C++</text>
   <rect x="116" y="58" width="194" height="8" rx="4" fill="#22211D"/>
-  <rect x="116" y="58" width="73" height="8" rx="4" fill="#3178C6"/>
-  <text x="358" y="66" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#B4AEA2">38%</text>
+  <rect x="116" y="58" width="55" height="8" rx="4" fill="#00599C"/>
+  <text x="358" y="66" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#B4AEA2">29%</text>
   <text x="22" y="88" font-family="Segoe UI, Noto Sans, sans-serif" font-size="12" fill="#F2EFE8">Python</text>
   <rect x="116" y="80" width="194" height="8" rx="4" fill="#22211D"/>
-  <rect x="116" y="80" width="59" height="8" rx="4" fill="#3776AB"/>
-  <text x="358" y="88" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#B4AEA2">30%</text>
-  <text x="22" y="110" font-family="Segoe UI, Noto Sans, sans-serif" font-size="12" fill="#F2EFE8">C++</text>
+  <rect x="116" y="80" width="54" height="8" rx="4" fill="#3776AB"/>
+  <text x="358" y="88" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#B4AEA2">28%</text>
+  <text x="22" y="110" font-family="Segoe UI, Noto Sans, sans-serif" font-size="12" fill="#F2EFE8">TypeScript</text>
   <rect x="116" y="102" width="194" height="8" rx="4" fill="#22211D"/>
-  <rect x="116" y="102" width="29" height="8" rx="4" fill="#00599C"/>
-  <text x="358" y="110" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#B4AEA2">15%</text>
+  <rect x="116" y="102" width="37" height="8" rx="4" fill="#3178C6"/>
+  <text x="358" y="110" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#B4AEA2">19%</text>
   <text x="22" y="132" font-family="Segoe UI, Noto Sans, sans-serif" font-size="12" fill="#F2EFE8">Cypher</text>
   <rect x="116" y="124" width="194" height="8" rx="4" fill="#22211D"/>
-  <rect x="116" y="124" width="16" height="8" rx="4" fill="#969084"/>
-  <text x="358" y="132" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#B4AEA2">8%</text>
+  <rect x="116" y="124" width="31" height="8" rx="4" fill="#969084"/>
+  <text x="358" y="132" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#B4AEA2">16%</text>
   <text x="22" y="154" font-family="Segoe UI, Noto Sans, sans-serif" font-size="12" fill="#F2EFE8">Rust</text>
   <rect x="116" y="146" width="194" height="8" rx="4" fill="#22211D"/>
   <rect x="116" y="146" width="11" height="8" rx="4" fill="#DEA584"/>
   <text x="358" y="154" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#B4AEA2">6%</text>
-  <text x="22" y="176" font-family="Segoe UI, Noto Sans, sans-serif" font-size="12" fill="#F2EFE8">JavaScript</text>
+  <text x="22" y="176" font-family="Segoe UI, Noto Sans, sans-serif" font-size="12" fill="#F2EFE8">C</text>
   <rect x="116" y="168" width="194" height="8" rx="4" fill="#22211D"/>
-  <rect x="116" y="168" width="6" height="8" rx="4" fill="#F7DF1E"/>
+  <rect x="116" y="168" width="6" height="8" rx="4" fill="#555555"/>
   <text x="358" y="176" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#B4AEA2">3%</text>
   <line x1="22" y1="196" x2="358" y2="196" stroke="#2A2925" stroke-width="1"/>
-  <text x="22" y="214" font-family="Segoe UI, Noto Sans, sans-serif" font-size="10" fill="#969084">Top 6 of 30 languages · forks excluded</text>
+  <text x="22" y="214" font-family="Segoe UI, Noto Sans, sans-serif" font-size="10" fill="#969084">Top 6 of 24 languages · forks excluded</text>
 </svg>
