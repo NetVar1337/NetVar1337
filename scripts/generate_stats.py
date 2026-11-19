@@ -27,13 +27,16 @@ ASSETS = ROOT / "assets"
 
 API = "https://api.github.com"
 
-# --- palette (matches the existing banner / card style) -----------------------
-BG = "#0B0F14"
-STROKE = "#1E293B"
-FG = "#E2E8F0"
-MUTED = "#94A3B8"
-ACCENT = "#A78BFA"
-ACCENT2 = "#22D3EE"
+# --- palette (matches assets/banner.svg editorial ink/vermilion style) -------
+BG = "#121210"
+LABEL_BG = "#161614"
+STROKE = "#2A2925"
+TRACK = "#22211D"
+FG = "#F2EFE8"
+SECONDARY = "#B4AEA2"
+MUTED = "#969084"
+ACCENT = "#E24A2A"
+ACCENT_SOFT = "#FF886D"
 
 LANG_COLORS = {
     "Python": "#3776AB", "Rust": "#DEA584", "JavaScript": "#F7DF1E",
@@ -203,34 +206,28 @@ def human(n: int) -> str:
 
 
 def render_badge(label: str, value: str, glyph: str, accent: str, aria: str) -> str:
-    """Render a flat badge (dark label segment + accent value segment).
+    """Render a 20px flat-square badge matching shields.io flat-square height.
 
     The badges are generated rather than pulled from shields.io so the numbers
     come from the same API call as the cards below them, and so they cannot be
     served stale by a third-party image cache.
     """
-    h = 28
-    icon_w = 13
-    label_w = 10 + icon_w + 6 + round(len(label) * 8.72) + 12
-    value_w = max(45, round(8.4 * len(value)) + 20)
+    h = 20
+    label_w = 24 + round(len(label) * 7.2) + 10
+    value_w = max(36, round(7.4 * len(value)) + 16)
     w = label_w + value_w
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
         f'viewBox="0 0 {w} {h}" role="img" aria-label="{esc(aria)}">',
         f'  <title>{esc(aria)}</title>',
-        '  <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">',
-        '    <stop offset="0" stop-color="#fff" stop-opacity=".16"/>',
-        '    <stop offset=".5" stop-color="#fff" stop-opacity="0"/>',
-        '    <stop offset="1" stop-color="#000" stop-opacity=".18"/>',
-        '  </linearGradient>',
-        f'  <rect width="{label_w}" height="{h}" fill="#0B1120"/>',
+        f'  <rect width="{label_w}" height="{h}" fill="{LABEL_BG}"/>',
         f'  <rect x="{label_w}" width="{value_w}" height="{h}" fill="{accent}"/>',
-        f'  <rect width="{w}" height="{h}" fill="url(#gloss)"/>',
-        '  <g fill="#fff" font-family="Verdana,Geneva,\'DejaVu Sans\',sans-serif">',
+        f'  <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" fill="none" stroke="{STROKE}" stroke-width="1"/>',
+        f'  <g fill="{FG}" font-family="Verdana,Geneva,\'DejaVu Sans\',sans-serif">',
         f'    {glyph}',
-        f'    <text x="31" y="18.5" font-size="11" font-weight="700" letter-spacing=".8">'
+        f'    <text x="24" y="13.5" font-size="10" font-weight="600" letter-spacing=".6">'
         f'{esc(label)}</text>',
-        f'    <text x="{label_w + value_w / 2}" y="19.5" text-anchor="middle" font-size="12" '
+        f'    <text x="{label_w + value_w / 2}" y="13.8" text-anchor="middle" font-size="10.5" '
         f'font-weight="700">{esc(value)}</text>',
         '  </g>',
         "</svg>",
@@ -238,32 +235,29 @@ def render_badge(label: str, value: str, glyph: str, accent: str, aria: str) -> 
     return "\n".join(out) + "\n"
 
 
-# five-point star, centred on (18, 14)
-STAR_GLYPH = ('<path d="M18,7.2 L19.76,11.57 L24.47,11.9 L20.85,14.93 L22,19.5 '
-              'L18,17 L14,19.5 L15.15,14.93 L11.53,11.9 L16.24,11.57 Z"/>')
+# five-point star, centred on (13, 10)
+STAR_GLYPH = ('<path fill="#FF886D" d="M13,5.2 L14.3,8.3 L17.6,8.6 L15.1,10.8 L15.8,14 '
+              'L13,12.2 L10.2,14 L10.9,10.8 L8.4,8.6 L11.7,8.3 Z"/>')
 
-# a single person, centred on (18, 14)
-PEOPLE_GLYPH = ('<circle cx="18" cy="11" r="4.2"/>'
-                '<path d="M10.9,21.5 a7.1,6 0 0 1 14.2,0 z"/>')
+# a single person, centred on (13, 10)
+PEOPLE_GLYPH = ('<circle fill="#FF886D" cx="13" cy="7.6" r="2.7"/>'
+                '<path fill="#FF886D" d="M8.3,15.2 a4.7,4.2 0 0 1 9.4,0 z"/>')
 
 
 def render_stars_badge(s: dict) -> str:
     """Badge with the stars earned on repositories this account authors.
 
     Forks are excluded on purpose: a fork's stars belong to the upstream
-    project, so counting them would overstate the authored work. This replaces
-    the old shields.io badge, which summed every repository on the account
-    (forks included) and therefore disagreed with the number below it in
-    `stats.svg`.
+    project, so counting them would overstate the authored work.
     """
     aria = (f"{s['own_stars']} stars earned across {s['owned_repos']} repositories "
             f"authored by {OWNER}; forks excluded")
-    return render_badge("STARS", str(s["own_stars"]), STAR_GLYPH, ACCENT, aria)
+    return render_badge("AUTHORED STARS", str(s["own_stars"]), STAR_GLYPH, STROKE, aria)
 
 
 def render_followers_badge(s: dict) -> str:
     aria = f"{s['followers']} people following {OWNER} on GitHub"
-    return render_badge("FOLLOWERS", str(s["followers"]), PEOPLE_GLYPH, "#5EEAD4", aria)
+    return render_badge("FOLLOWERS", str(s["followers"]), PEOPLE_GLYPH, STROKE, aria)
 
 
 def render_stats(s: dict) -> str:
@@ -279,37 +273,42 @@ def render_stats(s: dict) -> str:
         (str(s["public_repos"]), "Public repos"),
         (str(s["projects"]), "OSS projects"),
     ]
-    w, h = 460, 224
+    w, h = 420, 228
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
         f'viewBox="0 0 {w} {h}" role="img" aria-label="GitHub stats for {OWNER}">',
-        f'  <rect width="{w}" height="{h}" rx="12" fill="{BG}" stroke="{STROKE}" stroke-width="1"/>',
-        f'  <rect x="0" y="0" width="{w}" height="4" rx="2" fill="{ACCENT}"/>',
-        f'  <text x="22" y="36" font-family="Noto Sans, sans-serif" font-size="16" '
-        f'font-weight="700" fill="{ACCENT}">GitHub activity</text>',
-        f'  <text x="438" y="36" text-anchor="end" font-family="Noto Sans Mono, monospace" '
+        f'  <defs><clipPath id="stats-clip"><rect width="{w}" height="{h}" rx="10"/></clipPath></defs>',
+        '  <g clip-path="url(#stats-clip)">',
+        f'    <rect width="{w}" height="{h}" fill="{BG}"/>',
+        f'    <rect x="0" y="0" width="{w}" height="3" fill="{ACCENT}"/>',
+        '  </g>',
+        f'  <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="10" fill="none" stroke="{STROKE}" stroke-width="1"/>',
+        f'  <rect x="22" y="23" width="8" height="8" fill="{ACCENT}"/>',
+        f'  <text x="38" y="31" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11.5" '
+        f'font-weight="700" letter-spacing="1.2" fill="{FG}">GITHUB ACTIVITY</text>',
+        f'  <text x="{w - 22}" y="31" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" '
         f'font-size="11" fill="{MUTED}">@{OWNER}</text>',
     ]
     for col, cells in ((0, left), (1, right)):
-        x = 22 + col * 216
+        x = 22 + col * 198
         for row, (value, label) in enumerate(cells):
-            y = 78 + row * 40
+            y = 75 + row * 41
             out.append(
-                f'  <text x="{x}" y="{y}" font-family="Noto Sans Mono, monospace" font-size="19" '
+                f'  <text x="{x}" y="{y}" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="20" '
                 f'font-weight="700" fill="{FG}">{esc(value)}</text>'
             )
             out.append(
-                f'  <text x="{x}" y="{y + 16}" font-family="Noto Sans, sans-serif" font-size="11" '
+                f'  <text x="{x}" y="{y + 16}" font-family="Segoe UI, Noto Sans, sans-serif" font-size="11" '
                 f'fill="{MUTED}">{esc(label)}</text>'
             )
     footer = (
         f"{s['own_stars']} stars on {s['owned_repos']} authored repos · {s['issues']} issues · "
-        f"{s['org_repos']} repos under BitterSecurity & hashward-io"
+        f"{s['org_repos']} org repos"
     )
-    out.append(f'  <line x1="22" y1="198" x2="438" y2="198" stroke="{STROKE}" stroke-width="1"/>')
+    out.append(f'  <line x1="22" y1="196" x2="{w - 22}" y2="196" stroke="{STROKE}" stroke-width="1"/>')
     out.append(
-        f'  <text x="22" y="213" font-family="Noto Sans, sans-serif" font-size="9.5" '
-        f'fill="{MUTED}" opacity=".9">{esc(footer)}</text>'
+        f'  <text x="22" y="214" font-family="Segoe UI, Noto Sans, sans-serif" font-size="10" '
+        f'fill="{MUTED}">{esc(footer)}</text>'
     )
     out.append("</svg>")
     return "\n".join(out) + "\n"
@@ -318,37 +317,47 @@ def render_stats(s: dict) -> str:
 def render_langs(langs: list[tuple[str, int]], stats: dict) -> str:
     top = langs[:6]
     total = sum(size for _, size in top) or 1
-    w, h = 360, 200
+    w, h = 380, 228
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
         f'viewBox="0 0 {w} {h}" role="img" aria-label="Top languages">',
-        f'  <rect width="{w}" height="{h}" rx="12" fill="{BG}" stroke="{STROKE}" stroke-width="1"/>',
-        f'  <rect x="0" y="0" width="{w}" height="4" rx="2" fill="{ACCENT2}"/>',
-        f'  <text x="22" y="36" font-family="Noto Sans, sans-serif" font-size="16" '
-        f'font-weight="700" fill="{ACCENT}">Top languages</text>',
-        f'  <text x="338" y="36" text-anchor="end" font-family="Noto Sans Mono, monospace" '
+        f'  <defs><clipPath id="langs-clip"><rect width="{w}" height="{h}" rx="10"/></clipPath></defs>',
+        '  <g clip-path="url(#langs-clip)">',
+        f'    <rect width="{w}" height="{h}" fill="{BG}"/>',
+        f'    <rect x="0" y="0" width="{w}" height="3" fill="{ACCENT}"/>',
+        '  </g>',
+        f'  <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="10" fill="none" stroke="{STROKE}" stroke-width="1"/>',
+        f'  <rect x="22" y="23" width="8" height="8" fill="{ACCENT}"/>',
+        f'  <text x="38" y="31" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11.5" '
+        f'font-weight="700" letter-spacing="1.2" fill="{FG}">TOP LANGUAGES</text>',
+        f'  <text x="{w - 22}" y="31" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" '
         f'font-size="11" fill="{MUTED}">{stats["projects"]} repos</text>',
     ]
-    bar_x, bar_w = 132, 206
+    bar_x, bar_w = 116, 194
     for idx, (name, size) in enumerate(top):
-        y = 62 + idx * 22
+        y = 58 + idx * 22
         pct = size / total
-        color = LANG_COLORS.get(name, "#8B949E")
+        color = LANG_COLORS.get(name, MUTED)
         out.append(
-            f'  <text x="22" y="{y + 11}" font-family="Noto Sans, sans-serif" font-size="12" '
+            f'  <text x="22" y="{y + 8}" font-family="Segoe UI, Noto Sans, sans-serif" font-size="12" '
             f'fill="{FG}">{esc(name)}</text>'
         )
         out.append(
-            f'  <rect x="{bar_x}" y="{y}" width="{bar_w}" height="10" rx="5" fill="{STROKE}"/>'
+            f'  <rect x="{bar_x}" y="{y}" width="{bar_w}" height="8" rx="4" fill="{TRACK}"/>'
         )
         out.append(
-            f'  <rect x="{bar_x}" y="{y}" width="{max(3, round(bar_w * pct))}" height="10" '
-            f'rx="5" fill="{color}"/>'
+            f'  <rect x="{bar_x}" y="{y}" width="{max(4, round(bar_w * pct))}" height="8" '
+            f'rx="4" fill="{color}"/>'
         )
         out.append(
-            f'  <text x="338" y="{y + 9}" text-anchor="end" font-family="Noto Sans Mono, '
-            f'monospace" font-size="10" fill="{MUTED}">{pct * 100:.0f}%</text>'
+            f'  <text x="{w - 22}" y="{y + 8}" text-anchor="end" font-family="ui-monospace, Menlo, '
+            f'Consolas, monospace" font-size="11" fill="{SECONDARY}">{pct * 100:.0f}%</text>'
         )
+    out.append(f'  <line x1="22" y1="196" x2="{w - 22}" y2="196" stroke="{STROKE}" stroke-width="1"/>')
+    out.append(
+        f'  <text x="22" y="214" font-family="Segoe UI, Noto Sans, sans-serif" font-size="10" '
+        f'fill="{MUTED}">Top 6 of {len(langs)} languages · forks excluded</text>'
+    )
     out.append("</svg>")
     return "\n".join(out) + "\n"
 
